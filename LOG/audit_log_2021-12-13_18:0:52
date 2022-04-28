@@ -1,0 +1,2 @@
+audit(2021-12-13_18:0:52, ngac, ngac_start, success).
+audit(2021-12-13_18:0:52, ngac, event_processing, context_notify([weekday:true,business:true],success)).

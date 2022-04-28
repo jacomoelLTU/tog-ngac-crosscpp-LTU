@@ -1,0 +1,81 @@
+audit(2022-1-18_15:14:40, ngac, ngac_start, success).
+audit(2022-1-18_15:15:48, ngac, policy_admin, setpol(pol,failure)).
+audit(2022-1-18_15:18:44, ngac, policy_admin, setpol(pol,failure)).
+audit(2022-1-18_15:22:30, ngac, policy_admin, loadi('policy(pol,access,[user(u1),user_attribute(ua1),object(o1),object_attribute(oa1),policy_class(access),connector(\'PM\'),assign(u1,ua1),assign(o1,oa1),assign(ua1,access),assign(oa1,access),assign(access,\'PM\'),associate(ua1,[r,w],oa1)])',pol,success)).
+audit(2022-1-18_15:44:43, ngac, policy_admin, loadi('policy(pol,access,[user(Jesper),user(Ilaman),user_attribute(ua1),object(book1),object(book2),object(book3),object_attribute(oa1),policy_class(access),connector(\'PM\'),assign(Jesper,ua1),assign(Ilaman,ua1),assign(book1,oa1),assign(book2,oa1),assign(book3,oa1),assign(ua1,access),assign(oa1,access),assign(access,\'PM\'),associate(Jesper,[r, w],book1),associate(Jesper,[r],book2),associate(Ilaman,[r],book1),associate(Ilaman,[r, w],book3)])',pol,success)).
+audit(2022-1-18_15:55:14, ngac, policy_admin, loadi('policy(pol,access,[user(Malte),user(Frank),user_attribute(ua1),object(book1),object(book2),object(book3),object_attribute(oa1),policy_class(access),connector(\'PM\'),assign(Malte,ua1),assign(Frank,ua1),assign(book1,oa1),assign(book2,oa1),assign(book3,oa1),assign(ua1,access),assign(oa1,access),assign(access,\'PM\'),associate(Malte,[r, w],book1),associate(Malte,[r],book2),associate(Frank,[r],book1),associate(Frank,[r, w],book2)]).',pol,success)).
+audit(2022-1-18_15:57:28, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:0:4, ngac, policy_query, access_denied(pol,('Malte',r,book1))).
+audit(2022-1-18_16:0:9, ngac, policy_query, access_denied(pol,('Frank',w,book1))).
+audit(2022-1-18_16:0:33, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:0:42, ngac, policy_admin, getpol(success)).
+audit(2022-1-18_16:10:25, ngac, policy_admin, loadi('policy(pol,access,[user(Jesper),user(Ilaman),user_attribute(ua1),object(book1),object(book2),object(book3),object_attribute(oa1),policy_class(access),connector(\'PM\'),assign(Jesper,ua1),assign(Ilaman,ua1),assign(book1,oa1),assign(book2,oa1),assign(book3,oa1),assign(ua1,access),assign(oa1,access),assign(access,\'PM\'),associate(Jesper,[r],book1),associate(Jesper,[r, w],book2),associate(Ilaman,[w],book1),associate(Ilaman,[r],book2),associate(Ilaman,[r],book3)]).',pol,success)).
+audit(2022-1-18_16:10:32, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:10:35, ngac, policy_query, access_denied(pol,('Malte',r,book1))).
+audit(2022-1-18_16:11:13, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-18_16:11:14, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2022-1-18_16:11:14, ngac, policy_admin, getpol(success)).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_granted(test_policy_book,(jesper,r,bible))).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,hobbit))).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_granted(test_policy_book,(jesper,w,bible))).
+audit(2022-1-18_16:11:14, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2022-1-18_16:11:31, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2022-1-18_16:12:24, ngac, policy_query, access_denied(test_policy_book,('\'Malte\'',r,book1))).
+audit(2022-1-18_16:12:32, ngac, policy_query, access_denied(test_policy_book,('Malte',r,book1))).
+audit(2022-1-18_16:12:45, ngac, policy_query, access_denied(test_policy_book,('Malte',r,book1))).
+audit(2022-1-18_16:14:31, ngac, policy_query, access_denied(test_policy_book,('Malte',r,book1))).
+audit(2022-1-18_16:17:13, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:17:15, ngac, policy_query, access_denied(pol,('Malte',r,book1))).
+audit(2022-1-18_16:17:50, ngac, policy_query, access_denied(pol,('Malte',r,'\'book1\''))).
+audit(2022-1-18_16:18:4, ngac, policy_query, access_denied(pol,('Malte',r,book1))).
+audit(2022-1-18_16:18:34, ngac, policy_query, access_denied(pol,('Jesper',r,book1))).
+audit(2022-1-18_16:18:43, ngac, policy_query, access_denied(pol,(jesper,r,book1))).
+audit(2022-1-18_16:18:58, ngac, policy_query, access_denied(pol,('Jesper',r,book1))).
+audit(2022-1-18_16:19:36, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:19:49, ngac, policy_admin, loadi('policy(pol,access,[user(jesper),user(ilaman),user_attribute(ua1),object(book1),object(book2),object(book3),object_attribute(oa1),policy_class(access),connector(\'PM\'),assign(jesper,ua1),assign(ilaman,ua1),assign(book1,oa1),assign(book2,oa1),assign(book3,oa1),assign(ua1,access),assign(oa1,access),assign(access,\'PM\'),associate(jesper,[r],book1),associate(jesper,[w],book2),associate(jesper,[r],book3),associate(ilaman,[r, w],book1),associate(ilaman,[r],book2)]).',pol,success)).
+audit(2022-1-18_16:19:53, ngac, policy_query, access_denied(pol,('Jesper',r,book1))).
+audit(2022-1-18_16:19:56, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:20:4, ngac, policy_query, access_denied(pol,(jesper,r,book1))).
+audit(2022-1-18_16:20:55, ngac, policy_admin, loadi('policy(\'test_policy_book\',\'Project Access\', [user(\'jesper\'),user(\'ilaman\'),user_attribute(\'Writer\'),user_attribute(\'Reader\'),user_attribute(\'Library\'),object(\'hobbit\'),object(\'bible\'),object_attribute(\'Fantasy\'),object_attribute(\'Religious\'),object_attribute(\'Books\'),policy_class(\'Project Access\'),connector(\'PM\'),assign(\'jesper\',\'Writer\'),assign(\'ilaman\',\'Reader\'),assign(\'Writer\',\'Library\'),assign(\'Reader\',\'Library\'),assign(\'hobbit\',\'Fantasy\'),assign(\'bible\',\'Religious\'),assign(\'Fantasy\',\'Books\'),assign(\'Religious\',\'Books\'),assign(\'Library\',\'Project Access\'),assign(\'Books\',\'Project Access\'),assign(\'Project Access\',\'PM\'),associate(\'Writer\',[w],\'Fantasy\'),associate(\'Writer\',[w],\'Religious\'),associate(\'Library\',[r],\'Books\')]).',test_policy_book,success)).
+audit(2022-1-18_16:21:6, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:21:16, ngac, policy_query, access_denied(pol,(jesper,r,hobbit))).
+audit(2022-1-18_16:26:58, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:28:8, ngac, policy_admin, loadi('policy(\'pol\',\'Project Access\', [user(\'jesper\'),user(\'ilaman\'),user_attribute(\'Writer\'),user_attribute(\'Reader\'),user_attribute(\'Library\'),object(\'hobbit\'),object(\'bible\'),object_attribute(\'Fantasy\'),object_attribute(\'Religious\'),object_attribute(\'Books\'),policy_class(\'Project Access\'),connector(\'PM\'),assign(\'jesper\',\'Writer\'),assign(\'ilaman\',\'Reader\'),assign(\'Writer\',\'Library\'),assign(\'Reader\',\'Library\'),assign(\'hobbit\',\'Fantasy\'),assign(\'bible\',\'Religious\'),assign(\'Fantasy\',\'Books\'),assign(\'Religious\',\'Books\'),assign(\'Library\',\'Project Access\'),assign(\'Books\',\'Project Access\'),assign(\'Project Access\',\'PM\'),associate(\'Writer\',[w],\'Fantasy\'),associate(\'Writer\',[w],\'Religious\'),associate(\'Library\',[r],\'Books\')]).',pol,success)).
+audit(2022-1-18_16:28:13, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:28:15, ngac, policy_query, access_granted(pol,(jesper,r,hobbit))).
+audit(2022-1-18_16:28:37, ngac, policy_admin, loadi('policy(pol,\'Project Access\', [user(\'jesper\'),user(\'ilaman\'),user_attribute(\'Writer\'),user_attribute(\'Reader\'),user_attribute(\'Library\'),object(\'hobbit\'),object(\'bible\'),object_attribute(\'Fantasy\'),object_attribute(\'Religious\'),object_attribute(\'Books\'),policy_class(\'Project Access\'),connector(\'PM\'),assign(\'jesper\',\'Writer\'),assign(\'ilaman\',\'Reader\'),assign(\'Writer\',\'Library\'),assign(\'Reader\',\'Library\'),assign(\'hobbit\',\'Fantasy\'),assign(\'bible\',\'Religious\'),assign(\'Fantasy\',\'Books\'),assign(\'Religious\',\'Books\'),assign(\'Library\',\'Project Access\'),assign(\'Books\',\'Project Access\'),assign(\'Project Access\',\'PM\'),associate(\'Writer\',[w],\'Fantasy\'),associate(\'Writer\',[w],\'Religious\'),associate(\'Library\',[r],\'Books\')]).',pol,success)).
+audit(2022-1-18_16:28:41, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:28:44, ngac, policy_query, access_granted(pol,(jesper,r,hobbit))).
+audit(2022-1-18_16:29:16, ngac, policy_admin, loadi('policy(pol,\'Project Access\', [user(\'jesper\'),user(\'ilaman\'),user_attribute(\'Writer\'),user_attribute(\'Reader\'),user_attribute(\'Library\'),object(\'hobbit\'),object(\'bible\'),object_attribute(\'Fantasy\'),object_attribute(\'Religious\'),object_attribute(\'Books\'),policy_class(\'Project Access\'),connector(\'PM\'),assign(\'jesper\',\'Writer\'),assign(\'ilaman\',\'Reader\'),assign(\'Writer\',\'Library\'),assign(\'Reader\',\'Library\'),assign(\'hobbit\',\'Fantasy\'),assign(\'bible\',\'Religious\'),assign(\'Fantasy\',\'Books\'),assign(\'Religious\',\'Books\'),assign(\'Library\',\'Project Access\'),assign(\'Books\',\'Project Access\'),assign(\'Project Access\',\'PM\'),associate(\'jesper\',[w],\'hobbit\')]).',pol,success)).
+audit(2022-1-18_16:29:22, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:29:27, ngac, policy_query, access_denied(pol,(jesper,w,hobbit))).
+audit(2022-1-18_16:29:31, ngac, policy_query, access_denied(pol,(jesper,r,hobbit))).
+audit(2022-1-18_16:29:55, ngac, policy_admin, loadi('policy(pol,\'Project Access\', [user(\'jesper\'),user(\'ilaman\'),user_attribute(\'Writer\'),user_attribute(\'Reader\'),user_attribute(\'Library\'),object(\'hobbit\'),object(\'bible\'),object_attribute(\'Fantasy\'),object_attribute(\'Religious\'),object_attribute(\'Books\'),policy_class(\'Project Access\'),connector(\'PM\'),assign(\'jesper\',\'Writer\'),assign(\'ilaman\',\'Reader\'),assign(\'Writer\',\'Library\'),assign(\'Reader\',\'Library\'),assign(\'hobbit\',\'Fantasy\'),assign(\'bible\',\'Religious\'),assign(\'Fantasy\',\'Books\'),assign(\'Religious\',\'Books\'),assign(\'Library\',\'Project Access\'),assign(\'Books\',\'Project Access\'),assign(\'Project Access\',\'PM\'),associate(\'Library\',[r],\'Books\')]).',pol,success)).
+audit(2022-1-18_16:29:59, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:30:2, ngac, policy_query, access_granted(pol,(jesper,r,hobbit))).
+audit(2022-1-18_16:30:19, ngac, policy_admin, loadi('policy(pol,\'Project Access\', [user(\'jesper\'),user(\'ilaman\'),user_attribute(\'Writer\'),user_attribute(\'Reader\'),user_attribute(\'Library\'),object(\'hobbit\'),object(\'bible\'),object_attribute(\'Fantasy\'),object_attribute(\'Religious\'),object_attribute(\'Books\'),policy_class(\'Project Access\'),connector(\'PM\'),assign(\'jesper\',\'Writer\'),assign(\'ilaman\',\'Reader\'),assign(\'Writer\',\'Library\'),assign(\'Reader\',\'Library\'),assign(\'hobbit\',\'Fantasy\'),assign(\'bible\',\'Religious\'),assign(\'Fantasy\',\'Books\'),assign(\'Religious\',\'Books\'),assign(\'Library\',\'Project Access\'),assign(\'Books\',\'Project Access\'),assign(\'Project Access\',\'PM\'),associate(\'jesper\',[r],\'Books\')]).',pol,success)).
+audit(2022-1-18_16:30:22, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:30:24, ngac, policy_query, access_denied(pol,(jesper,r,hobbit))).
+audit(2022-1-18_16:35:29, ngac, policy_admin, loadi('policy(pol,access,[user(jesper),user_attribute(ua_jesper),assign(jesper,ua_jesper),assign(ua_jesper,access),user(ilaman),user_attribute(ua_ilaman),assign(ilaman,ua_ilaman),assign(ua_ilaman,access),object(book1),object_attribute(oa_book1),assign(book1,oa_book1),assign(oa_book1,access),object(book2),object_attribute(oa_book2),assign(book2,oa_book2),assign(oa_book2,access),object(book3),object_attribute(oa_book3),assign(book3,oa_book3),assign(oa_book3,access),policy_class(access),connector(\'PM\'),assign(access,\'PM\'),associate(ua_jesper,[r],oa_book1),associate(ua_jesper,[w],oa_book2),associate(ua_jesper,[r],oa_book3),associate(ua_ilaman,[r, w],oa_book1),associate(ua_ilaman,[r],oa_book2)]).',pol,success)).
+audit(2022-1-18_16:35:36, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:35:55, ngac, policy_query, access_granted(pol,(jesper,r,book1))).
+audit(2022-1-18_16:37:44, ngac, policy_admin, loadi('policy(pol2,access,[user(Jesper),user_attribute(ua_Jesper),assign(Jesper,ua_Jesper),assign(ua_Jesper,access),user(Ilaman),user_attribute(ua_Ilaman),assign(Ilaman,ua_Ilaman),assign(ua_Ilaman,access),object(book1),object_attribute(oa_book1),assign(book1,oa_book1),assign(oa_book1,access),object(book2),object_attribute(oa_book2),assign(book2,oa_book2),assign(oa_book2,access),policy_class(access),connector(\'PM\'),assign(access,\'PM\'),associate(ua_Jesper,[r],oa_book1),associate(ua_Jesper,[r],oa_book2),associate(ua_Ilaman,[w],oa_book1),associate(ua_Ilaman,[w],oa_book2)]).',pol2,success)).
+audit(2022-1-18_16:37:47, ngac, policy_admin, setpol(pol2,success)).
+audit(2022-1-18_16:38:0, ngac, policy_query, access_granted(pol2,('Jesper',r,book1))).
+audit(2022-1-18_16:41:13, ngac, policy_admin, loadi('policy(pol2,access,[user(Jesper),user_attribute(ua_Jesper),assign(Jesper,ua_Jesper),assign(ua_Jesper,access),user(Ilaman),user_attribute(ua_Ilaman),assign(Ilaman,ua_Ilaman),assign(ua_Ilaman,access),object(book1),object_attribute(oa_book1),assign(book1,oa_book1),assign(oa_book1,access),object(book2),object_attribute(oa_book2),assign(book2,oa_book2),assign(oa_book2,access),policy_class(access),connector(\'PM\'),assign(access,\'PM\'),associate(ua_Jesper,[r],oa_book1),associate(ua_Jesper,[r],oa_book2),associate(ua_Ilaman,[w],oa_book1),associate(ua_Ilaman,[w],oa_book2)]).',pol2,success)).
+audit(2022-1-18_16:41:28, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:41:37, ngac, policy_query, access_denied(pol,('Jesper',r,book1))).
+audit(2022-1-18_16:42:20, ngac, policy_query, access_denied(pol,('Jesper',r,book1))).
+audit(2022-1-18_16:42:21, ngac, policy_query, access_denied(pol,('Jesper',r,book1))).
+audit(2022-1-18_16:42:26, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:42:46, ngac, policy_admin, loadi('policy(pol,access,[user(Jesper),user_attribute(ua_Jesper),assign(Jesper,ua_Jesper),assign(ua_Jesper,access),user(Ilaman),user_attribute(ua_Ilaman),assign(Ilaman,ua_Ilaman),assign(ua_Ilaman,access),object(book1),object_attribute(oa_book1),assign(book1,oa_book1),assign(oa_book1,access),object(book2),object_attribute(oa_book2),assign(book2,oa_book2),assign(oa_book2,access),object(book3),object_attribute(oa_book3),assign(book3,oa_book3),assign(oa_book3,access),policy_class(access),connector(\'PM\'),assign(access,\'PM\'),associate(ua_Jesper,[r],oa_book1),associate(ua_Jesper,[r, w],oa_book2),associate(ua_Jesper,[w],oa_book3),associate(ua_Ilaman,[w],oa_book1),associate(ua_Ilaman,[w],oa_book2),associate(ua_Ilaman,[w],oa_book3)]).',pol,success)).
+audit(2022-1-18_16:42:52, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:43:4, ngac, policy_query, access_granted(pol,('Jesper',r,book1))).
+audit(2022-1-18_16:43:4, ngac, policy_admin, setpol(pol,success)).
+audit(2022-1-18_16:43:6, ngac, policy_query, access_granted(pol,('Jesper',r,book1))).
+audit(2022-1-18_16:43:8, ngac, policy_query, access_granted(pol,('Jesper',r,book1))).

@@ -1,4 +1,3 @@
-:- module(rap, [rap/3]).
 
 %:- use_module(library(http/http_client)).
 
@@ -11,12 +10,18 @@
 file_open(Object,r,Stream) :-
 	format('rap: opening ~a~n',Object),
 	open(Object,read,Stream).
+	
+file_open(Object,w,Stream) :-
+	format('rap: opening ~a~n',Object),
+	open(Object,write,Stream).
 
 file_close(Stream) :-
-	format('rap: closing ~a~n',Stream),
+	writeln('rap: closing'),
 	close(Stream).
 
 file_read(Stream,ReadData) :-
 	read_stream_to_codes(Stream,ReadData).
 
-file_write().
+file_write(Stream, Data) :-
+	format('rap: writing ~a~n', Data),
+	write(Stream, Data).

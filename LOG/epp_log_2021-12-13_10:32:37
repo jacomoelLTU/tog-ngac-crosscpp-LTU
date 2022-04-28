@@ -1,0 +1,34 @@
+epp_log(2021-12-13_10:32:37, epp_context_change, [weekday:true,business:true]).
+epp_log(2021-12-13_10:32:37, report_event, event(context_change,x,x,x,x)).
+epp_log(2021-12-13_10:32:37, 'matched patterns in report_event', []).
+epp_log(2021-12-13_10:32:37, event_processing, context_notify([weekday:true,business:true],success)).
+epp_log(2021-12-13_10:32:37, epp_started, policy_server).
+epp_log(2021-12-13_10:44:6, report_event, event(test_event,x,x,x,x)).
+epp_log(2021-12-13_10:44:6, 'matched patterns in report_event', []).
+epp_log(2021-12-13_10:44:6, event_processing, report_event(test_event,success)).
+epp_log(2021-12-13_10:44:6, event_processing, report_event(inval_event,failure)).
+epp_log(2021-12-13_10:44:6, report_event, event(test_event,user(u1),policy_class(pc),operation(adnull),object(o1))).
+epp_log(2021-12-13_10:44:6, 'matched patterns in report_event', []).
+epp_log(2021-12-13_10:44:6, event_processing, report_event(event(test_event,user(u1),policy_class(pc),operation(adnull),object(o1)),success)).
+epp_log(2021-12-13_10:44:6, event_processing, loadi_erp(er_test1,success)).
+epp_log(2021-12-13_10:44:6, report_event, event(test_event,user(u1),policy_class(pc),operation(adnull),object(o1))).
+epp_log(2021-12-13_10:44:6, 'matched patterns in report_event', [1:any]).
+epp_log(2021-12-13_10:44:6, ep_command, addm([])).
+epp_log(2021-12-13_10:44:6, ep_command, deletem([])).
+epp_log(2021-12-13_10:44:6, event_processing, report_event(event(test_event,user(u1),policy_class(pc),operation(adnull),object(o1)),success)).
+epp_log(2021-12-13_10:44:6, report_event, event(test_event,user(u1),policy_class(pc),operation(addone),object(o1))).
+epp_log(2021-12-13_10:44:6, 'matched patterns in report_event', [2:any]).
+epp_log(2021-12-13_10:44:6, ep_command, add(ipolicy,user(u4))).
+epp_log(2021-12-13_10:44:6, event_processing, report_event(event(test_event,user(u1),policy_class(pc),operation(addone),object(o1)),success)).
+epp_log(2021-12-13_10:44:6, report_event, event(test_event,user(u1),policy_class(pc),operation(addm1),object(o1))).
+epp_log(2021-12-13_10:44:6, 'matched patterns in report_event', [3:any]).
+epp_log(2021-12-13_10:44:6, ep_command, addm(ipolicy,[user(u2),assign(u2,ua1)])).
+epp_log(2021-12-13_10:44:6, event_processing, report_event(event(test_event,user(u1),policy_class(pc),operation(addm1),object(o1)),success)).
+epp_log(2021-12-13_10:44:6, report_event, event(test_event,user(u1),policy_class(pc),operation(deletem1),object(o1))).
+epp_log(2021-12-13_10:44:6, 'matched patterns in report_event', [4:any]).
+epp_log(2021-12-13_10:44:6, ep_command, deletem(ipolicy,[user(u4),assign(u2,ua1),user(u2)])).
+epp_log(2021-12-13_10:44:6, event_processing, report_event(event(test_event,user(u1),policy_class(pc),operation(deletem1),object(o1)),success)).
+epp_log(2021-12-13_10:44:6, report_event, event(test_event,user(u1),policy_class(pc),operation(deletem1),object(o1))).
+epp_log(2021-12-13_10:44:6, 'matched patterns in report_event', [4:any]).
+epp_log(2021-12-13_10:44:6, ep_command, deletem(ipolicy,[user(u4),assign(u2,ua1),user(u2)])).
+epp_log(2021-12-13_10:44:6, event_processing, report_event(event(test_event,user(u1),policy_class(pc),operation(deletem1),object(o1)),success)).

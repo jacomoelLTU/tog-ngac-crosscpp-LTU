@@ -7,6 +7,9 @@
 :- use_module(dpl).
 :- use_module(sessions).
 
+:- use_module(library(http/http_cors)).
+:- use_module(library(settings)).
+
 
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
@@ -52,6 +55,8 @@ server_opt_spec([
 	 help( 'URL of Cross-CPP Context Monitoring and Extraction system' )]
 ]).
 
+:- set_setting(http:cors, [*]).
+
 :- dynamic server_options/1.
 server_options([]).
 
@@ -80,7 +85,7 @@ server(Port) :-
 	->  param:server_sleeptime(S), go_to_sleep(S)
 	;   true
 	).
-
+	
 server(Port,AToken) :-
 	param:setparam(admin_token,AToken),
 	server(Port).

@@ -1,0 +1,9 @@
+audit(2022-1-16_20:11:49, ngac, ngac_start, success).
+audit(2022-1-16_20:11:58, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:12:11, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:12:41, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:16:17, ngac, policy_admin, loadi('policy(test,access,[ user(u1), user_attribute(ua1), object(o1), object_attribute(oa1), policy_class(access), connector(\'PM\'), assign(u1,ua1), assign(o1,oa1), assign(ua1,access), assign(oa1,access), assign(access,\'PM\'), associate(ua1,[r,w],oa1)])',test,success)).
+audit(2022-1-16_20:16:29, ngac, policy_admin, loadi('policy(test,access,[            user(u1),            user_attribute(ua1),            object(o1),            object_attribute(oa1),            policy_class(access),            connector(\'PM\'),            assign(u1,ua1),            assign(o1,oa1),            assign(ua1,access),            assign(oa1,access),            assign(access,\'PM\'),            associate(ua1,[r,w],oa1)])        ',test,success)).
+audit(2022-1-16_20:16:58, ngac, policy_admin, load(test,failure)).
+audit(2022-1-16_20:17:20, ngac, policy_admin, loadi('policy(test,access,[            user(u1),            user_attribute(ua1),            object(o1),            object_attribute(oa1),            policy_class(access),            connector(\'PM\'),            assign(u1,ua1),            assign(o1,oa1),            assign(ua1,access),            assign(oa1,access),            assign(access,\'PM\'),            associate(ua1,[r,w],oa1)])        ',test,success)).
+audit(2022-1-16_20:18:17, ngac, policy_admin, setpol(test,success)).

@@ -1,0 +1,50 @@
+strict digraph "test_policy_book" {
+  node [shape=none]
+  APC [label="",width=0,height=0];
+  "<Users>"->"<User Attributes>" [arrowhead=none,style=invis];
+  "<User Attributes>"->APC [arrowhead=none,style=invis];
+  APC->"<Policy Classes>" [arrowhead=none,style=invis];
+  node [shape=ellipse]
+  jesper [peripheries=2];  ilaman [peripheries=2];
+  hobbit;  bible;
+  jesper -> Writer;
+  ilaman -> Reader;
+  hobbit -> Fantasy;
+  bible -> Religious;
+  Writer -> Library;
+  Reader -> Library;
+  Fantasy -> Books;
+  Religious -> Books;
+  Library -> "Project Access";
+  Books -> "Project Access";
+  "Project Access" -> PM;
+  Writer -> Fantasy [constraint=false,label="[w]",style=dashed,arrowhead=none];
+  Writer -> Religious [constraint=false,label="[w]",style=dashed,arrowhead=none];
+  Library -> Books [constraint=false,label="[r]",style=dashed,arrowhead=none];
+  { rank=same; jesper ilaman hobbit bible }
+  { rank=same; Writer Reader Fantasy Religious }
+  { rank=same; Library Books }
+  subgraph user_dag {
+    subgraph u_nodes {
+      jesper; ilaman; 
+      jesper->ilaman [style=invis];
+    }
+    subgraph ua_nodes {
+      Writer; Reader; Library; 
+    }
+  }
+  subgraph object_dag {
+    subgraph o_nodes {
+      hobbit; bible; 
+      hobbit->bible [style=invis];
+    }
+    subgraph oa_nodes {
+      Fantasy; Religious; Books; 
+    }
+  }
+  subgraph pc_nodes {
+    "Project Access" [shape=polygon,sides=5];
+  }
+  node [shape=none]
+  "<Objects>"->"<Object Attributes>" [arrowhead=none,style=invis]
+}

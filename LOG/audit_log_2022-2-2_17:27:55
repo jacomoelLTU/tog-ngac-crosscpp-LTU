@@ -1,0 +1,10 @@
+audit(2022-2-2_17:27:55, ngac, ngac_start, success).
+audit(2022-2-2_17:27:58, ngac, policy_admin, getpol(success)).
+audit(2022-2-2_17:28:3, ngac, policy_admin, getpol(success)).
+audit(2022-2-2_17:28:8, ngac, policy_admin, getpol(success)).
+audit(2022-2-2_17:28:13, ngac, policy_admin, getpol(success)).
+audit(2022-2-2_17:28:17, ngac, policy_admin, loadi(' policy(policy_book,\'access\',[user(\'Jesper\'),user(\'Ilaman\'),user_attribute(\'Writer\'),user_attribute(\'Reader\'),user_attribute(\'Library\'),object(\'hobbit\'),object(\'bible\'),object_attribute(\'Fantasy\'),object_attribute(\'Religious\'),object_attribute(\'Books\'),policy_class(\'access\'),connector(\'PM\'),assign(\'Jesper\',\'Writer\'),assign(\'Ilaman\',\'Reader\'),assign(\'hobbit\',\'Fantasy\'),assign(\'bible\',\'Religious\'),assign(\'Writer\',\'access\'),assign(\'Reader\',\'access\'),assign(\'Library\',\'access\'),assign(\'Fantasy\',\'access\'),assign(\'Religious\',\'access\'),assign(\'Books\',\'access\'),assign(\'access\',\'PM\'),associate(\'Writer\',[w],\'Fantasy\'),associate(\'Writer\',[w],\'Religious\'),associate(\'Library\',[r],\'Books\')])',policy_book,success)).
+audit(2022-2-2_17:28:19, ngac, policy_admin, getpol(success)).
+audit(2022-2-2_17:28:21, ngac, policy_admin, getpol(success)).
+audit(2022-2-2_17:28:22, ngac, policy_admin, getpol(success)).
+audit(2022-2-2_17:28:27, ngac, policy_admin, getpol(success)).

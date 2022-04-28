@@ -1,4 +1,4 @@
-:- module(pep, [pep_server/0, pep_server/1]).
+:- module(pep, [pep_server/0,pep_server/1]).
 
 :- use_module(library(http/http_client)).
 
@@ -7,6 +7,11 @@
 :- use_module(library(http/http_wrapper)).
 :- use_module(library(http/http_header)).
 :- use_module(library(http/http_parameters)).
+:- use_module(library(http/http_json)).
+:- use_module(library(http/json)).
+
+:- use_module(library(http/http_cors)).
+:- use_module(library(settings)).
 
 :- use_module(library(uuid)).
 
@@ -33,6 +38,10 @@ pep_server(Port) :- http_server(http_dispatch, [port(Port)]).
 :- http_handler(root(peapi/getObject), peapi_dispatch(getObject), [prefix]).
 :- http_handler(root(peapi/putObject), peapi_dispatch(putObject), [prefix]).
 :- http_handler(root('peapi/'), unimp_peapi, [prefix]).
+
+:- http_handler(root(peapi/access), handle, []).
+
+:- set_setting(http:cors, ['http://localhost']).
 
 peapi(getLastError,[],[]).
 peapi(openObject,[objname(ObjName,[atom]),operations(Operations,[atom])],[ObjName,Operations]).
@@ -70,23 +79,55 @@ peapi_dispatch(API,Request) :-
 %       return rap_result
 %     else /* access_result == 'deny' */
 %       return 'Op on Object denied'
+	
 
-pep(Op,Object,Data) :-
+handle(Request) :-
+	http_parameters(Request,
+                    [ user(User, []),
+                      ar(AR, []),
+                      object(Object, [])
+                    ]),
+                    
+    	pep(AR,Object, User, Access, Data),
+
+	JSON_Term = json([status="success", access=Access, data=Data]),
+	cors_enable,
+	reply_json(JSON_Term).
+	
+	
+
+pep(Op,Object, User, Access, Data) :-
 	PDP='http://127.0.0.1:8001/pqapi/',
 	% dummy arguments for demonstration
-	U=u1, % from the session environment
+	U=User, % from the session environment
 	AR=Op, O=Object, % from the request
-	format(atom(Query),'access?user=~a&ar=~a&object=~a',[U,AR,O]),
+	format(atom(Query),'access?user=~w&ar=~w&object=~w',[U,AR,O]),
 	atom_concat(PDP,Query,PDPq),
 
-	% e.g. PDPq='http://127.0.0.1:8001/pqapi/access?user=u1&ar=w&object=o2'
 	http_get(PDPq,PDPresult,[]), % query the PDP
-
-	(   sub_atom(PDPresult, 0, _, _, grant)
-	->  writeln('Access granted'),
+      	atom_json_term(Atom, PDPresult, []), % Make json to atom
+	(  % Check i grant is in the response
+	    sub_atom(Atom, _, _, _, grant)
+	->  Access = 'Access granted',
 	    % call Resource Access Point and return data
-	    (	Op == r -> Data = 'placeholder data'; true)
-	;   writeln('Access denied')
+	    (	Op == r 
+	    ->  rap:file_open(Object, r, Stream),
+		    rap:file_read(Stream,ReadData),
+		    atom_codes(Data, ReadData),
+		    rap:file_close(Stream),
+		    !
+		    
+		;
+		Op == w
+		-> rap:file_open(Object, w, Stream),
+		    rap:file_write(Stream, Data),
+		    rap:file_close(Stream),
+		    true
+	    )
+	   
+	;  
+		Access = 'Access denied',
+		Data = 'No data granted'
 	).
 
 :- dynamic openObject/5.

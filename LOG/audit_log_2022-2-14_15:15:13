@@ -1,0 +1,90 @@
+audit(2022-2-14_15:15:13, ngac, ngac_start, success).
+audit(2022-2-14_15:15:16, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/context_test.pl',context_test,success)).
+audit(2022-2-14_15:15:20, ngac, policy_admin, setpol(context_test,success)).
+audit(2022-2-14_15:15:23, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_15:19:3, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:19:22, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:20:51, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:22:21, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:22:26, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:22:29, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:22:34, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:22:37, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:22:40, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/context_test.pl',context_test,success)).
+audit(2022-2-14_15:22:54, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/context_test.pl',context_test,success)).
+audit(2022-2-14_15:22:57, ngac, policy_admin, setpol(context_test,success)).
+audit(2022-2-14_15:23:0, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_15:23:2, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:23:5, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:23:6, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:23:6, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:23:15, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:24:12, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:25:34, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:26:29, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/context_test.pl',context_test,success)).
+audit(2022-2-14_15:26:33, ngac, policy_admin, setpol(context_test,success)).
+audit(2022-2-14_15:26:35, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_15:26:38, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:26:47, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:26:50, ngac, policy_query, access_denied(context_test,('Ulf',w,'Secret_Document'))).
+audit(2022-2-14_15:29:13, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:29:15, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:32:1, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/context_test.pl',context_test,success)).
+audit(2022-2-14_15:32:4, ngac, policy_admin, setpol(context_test,success)).
+audit(2022-2-14_15:32:10, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_15:32:13, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:32:28, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:35:30, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:35:35, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:36:2, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/context_test.pl',context_test,success)).
+audit(2022-2-14_15:36:5, ngac, policy_admin, setpol(context_test,success)).
+audit(2022-2-14_15:36:8, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_15:36:13, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:36:17, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:36:18, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:36:24, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:36:25, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:36:25, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:36:39, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:36:40, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:36:41, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:40:8, ngac, policy_admin, load('EXAMPLES/EXAMPLES/book_lift.pl',book_lift,success)).
+audit(2022-2-14_15:40:8, ngac, policy_admin, load('EXAMPLES/EXAMPLES/book_room.pl',book_room,success)).
+audit(2022-2-14_15:40:8, ngac, policy_admin, load('EXAMPLES/EXAMPLES/read_file.pl',read_file,success)).
+audit(2022-2-14_15:40:8, ngac, policy_admin, setpol(book_lift,success)).
+audit(2022-2-14_15:40:8, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(book_lift,(u1,book,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(book_lift,(u2,book,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(book_lift,(u3,book,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(book_lift,(u3,book,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(book_lift,(u1,book,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(book_lift,(u2,book,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(book_lift,(u1,book,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(book_lift,(u2,book,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_admin, setpol(book_room,success)).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(book_room,(u1,book,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(book_room,(u2,book,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(book_room,(u3,book,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(book_room,(u3,book,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(book_room,(u1,book,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(book_room,(u2,book,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(book_room,(u1,book,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(book_room,(u2,book,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_admin, setpol(read_file,success)).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(read_file,(u1,read,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(read_file,(u2,read,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(read_file,(u3,read,o1))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_granted(read_file,(u3,read,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(read_file,(u1,read,o2))).
+audit(2022-2-14_15:40:8, ngac, policy_query, access_denied(read_file,(u2,read,o1))).
+audit(2022-2-14_15:41:6, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/context_test.pl',context_test,success)).
+audit(2022-2-14_15:41:14, ngac, policy_admin, setpol(context_test,success)).
+audit(2022-2-14_15:41:19, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_15:41:21, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:41:25, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:41:26, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_15:43:8, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/context_test.pl',context_test,success)).
+audit(2022-2-14_15:43:11, ngac, policy_admin, setpol(context_test,success)).
+audit(2022-2-14_15:43:14, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_15:43:17, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_15:43:19, ngac, policy_query, access_denied(context_test,('Ulf',r,'Secret_Document'))).

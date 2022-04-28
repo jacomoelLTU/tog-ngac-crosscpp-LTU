@@ -1,0 +1,229 @@
+audit(2021-11-29_10:16:40, ngac, ngac_start, success).
+audit(2021-11-29_10:17:6, ngac, policy_admin, setpol('Policy (a)',success)).
+audit(2021-11-29_10:17:6, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:17:6, ngac, policy_query, access_granted('Policy (a)',(u1,r,o1))).
+audit(2021-11-29_10:17:6, ngac, policy_query, access_granted('Policy (a)',(u1,w,o1))).
+audit(2021-11-29_10:17:6, ngac, policy_query, access_granted('Policy (a)',(u1,r,o2))).
+audit(2021-11-29_10:17:6, ngac, policy_query, access_denied('Policy (a)',(u1,w,o2))).
+audit(2021-11-29_10:17:6, ngac, policy_admin, setpol('Policy (b)',success)).
+audit(2021-11-29_10:17:6, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:17:6, ngac, policy_query, access_denied('Policy (b)',(u1,r,o1))).
+audit(2021-11-29_10:17:6, ngac, policy_query, access_denied('Policy (b)',(u1,w,o1))).
+audit(2021-11-29_10:17:6, ngac, policy_query, access_granted('Policy (b)',(u1,r,o2))).
+audit(2021-11-29_10:17:6, ngac, policy_query, access_granted('Policy (b)',(u1,w,o2))).
+audit(2021-11-29_9:39:12, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:39:12, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:39:12, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:39:12, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:39:12, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:39:12, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:39:12, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:39:12, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:39:12, ngac, policy_query, access_denied('Policy (b)',(u2,read,o1))).
+audit(2021-11-29_9:41:48, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:41:48, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:41:48, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:41:48, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:41:48, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:41:48, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:41:48, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:41:48, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:41:48, ngac, policy_query, access_denied('Policy (b)',(u2,read,o1))).
+audit(2021-11-29_9:49:58, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:49:58, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:49:58, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:49:58, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:49:58, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:49:58, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:49:58, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:49:58, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:49:58, ngac, policy_query, access_denied('Policy (b)',(u2,read,o1))).
+audit(2021-11-29_9:54:32, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:54:32, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:54:32, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:54:32, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:54:32, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:54:32, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:54:32, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:54:32, ngac, policy_admin, 'authentication error').
+audit(2021-11-29_9:54:32, ngac, policy_query, access_denied('Policy (b)',(u2,read,o1))).
+audit(2021-11-29_10:20:44, ngac, policy_admin, setpol(none,success)).
+audit(2021-11-29_10:20:44, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:20:44, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:20:44, ngac, policy_query, access(failure)).
+audit(2021-11-29_10:22:13, ngac, policy_admin, setpol(none,success)).
+audit(2021-11-29_10:22:13, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:22:13, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:23:5, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:24:15, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:24:15, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:24:15, ngac, policy_query, access_granted('Policy1',(u1,r,'ProjectA'))).
+audit(2021-11-29_10:27:30, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:27:30, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:27:30, ngac, policy_query, access_granted('Policy1',(u1,r,'ProjectA'))).
+audit(2021-11-29_10:27:30, ngac, policy_query, access_granted('Policy1',(u1,r,'ProjectB'))).
+audit(2021-11-29_10:27:30, ngac, policy_query, access_granted('Policy1',(u2,r,'ProjectA'))).
+audit(2021-11-29_10:27:30, ngac, policy_query, access_granted('Policy1',(u2,r,'ProjectB'))).
+audit(2021-11-29_10:27:30, ngac, policy_query, access_denied('Policy1',(u1,r,'GrB-Secret'))).
+audit(2021-11-29_10:27:30, ngac, policy_query, access_denied('Policy1',(u2,r,'GrB-Secret'))).
+audit(2021-11-29_10:27:56, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:27:56, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:27:56, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectA'))).
+audit(2021-11-29_10:27:56, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectB'))).
+audit(2021-11-29_10:27:56, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectA'))).
+audit(2021-11-29_10:27:56, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:27:56, ngac, policy_query, access_denied('Policy1',(u1,w,'GrB-Secret'))).
+audit(2021-11-29_10:27:56, ngac, policy_query, access_denied('Policy1',(u2,w,'GrB-Secret'))).
+audit(2021-11-29_10:29:59, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:29:59, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:29:59, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectA'))).
+audit(2021-11-29_10:29:59, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:29:59, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectA'))).
+audit(2021-11-29_10:29:59, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:29:59, ngac, policy_query, access_denied('Policy1',(u1,w,'GrB-Secret'))).
+audit(2021-11-29_10:29:59, ngac, policy_query, access_denied('Policy1',(u2,w,'GrB-Secret'))).
+audit(2021-11-29_10:30:53, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:30:53, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:30:53, ngac, policy_query, access_granted('Policy1',(u1,r,'ProjectA'))).
+audit(2021-11-29_10:30:53, ngac, policy_query, access_granted('Policy1',(u2,r,'ProjectB'))).
+audit(2021-11-29_10:30:53, ngac, policy_query, access_granted('Policy1',(u1,r,'ProjectA'))).
+audit(2021-11-29_10:30:53, ngac, policy_query, access_granted('Policy1',(u2,r,'ProjectB'))).
+audit(2021-11-29_10:30:53, ngac, policy_query, access_denied('Policy1',(u1,r,'GrB-Secret'))).
+audit(2021-11-29_10:30:53, ngac, policy_query, access_denied('Policy1',(u2,r,'GrB-Secret'))).
+audit(2021-11-29_10:31:31, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:31:31, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:31:31, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:31:31, ngac, policy_query, access_granted('Policy1',(u1,r,'ProjectA'))).
+audit(2021-11-29_10:31:31, ngac, policy_query, access_granted('Policy1',(u2,r,'ProjectB'))).
+audit(2021-11-29_10:31:31, ngac, policy_query, access_granted('Policy1',(u1,r,'ProjectA'))).
+audit(2021-11-29_10:31:31, ngac, policy_query, access_granted('Policy1',(u2,r,'ProjectB'))).
+audit(2021-11-29_10:31:31, ngac, policy_query, access_denied('Policy1',(u1,r,'GrB-Secret'))).
+audit(2021-11-29_10:31:31, ngac, policy_query, access_denied('Policy1',(u2,r,'GrB-Secret'))).
+audit(2021-11-29_10:31:49, ngac, policy_admin, load('EXAMPLES/policy1.pl','Policy1',success)).
+audit(2021-11-29_10:31:49, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:31:49, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:31:49, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectA'))).
+audit(2021-11-29_10:31:49, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:31:49, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectA'))).
+audit(2021-11-29_10:31:49, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:31:49, ngac, policy_query, access_denied('Policy1',(u1,w,'GrB-Secret'))).
+audit(2021-11-29_10:31:49, ngac, policy_query, access_denied('Policy1',(u2,w,'GrB-Secret'))).
+audit(2021-11-29_10:32:1, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:32:1, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:32:1, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectA'))).
+audit(2021-11-29_10:32:1, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:32:1, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectA'))).
+audit(2021-11-29_10:32:1, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:32:1, ngac, policy_query, access_denied('Policy1',(u1,w,'GrB-Secret'))).
+audit(2021-11-29_10:32:1, ngac, policy_query, access_denied('Policy1',(u2,w,'GrB-Secret'))).
+audit(2021-11-29_10:32:30, ngac, policy_admin, setpol('Policy (a)',success)).
+audit(2021-11-29_10:32:30, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:32:30, ngac, policy_query, access_granted('Policy (a)',(u1,r,o1))).
+audit(2021-11-29_10:32:30, ngac, policy_query, access_granted('Policy (a)',(u1,w,o1))).
+audit(2021-11-29_10:32:30, ngac, policy_query, access_granted('Policy (a)',(u1,r,o2))).
+audit(2021-11-29_10:32:30, ngac, policy_query, access_denied('Policy (a)',(u1,w,o2))).
+audit(2021-11-29_10:32:30, ngac, policy_admin, setpol('Policy (b)',success)).
+audit(2021-11-29_10:32:30, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:32:30, ngac, policy_query, access_denied('Policy (b)',(u1,r,o1))).
+audit(2021-11-29_10:32:30, ngac, policy_query, access_denied('Policy (b)',(u1,w,o1))).
+audit(2021-11-29_10:32:30, ngac, policy_query, access_granted('Policy (b)',(u1,r,o2))).
+audit(2021-11-29_10:32:30, ngac, policy_query, access_granted('Policy (b)',(u1,w,o2))).
+audit(2021-11-29_10:34:6, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:34:6, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:34:6, ngac, policy_query, access_granted('Policy1',(u1,w,o1))).
+audit(2021-11-29_10:34:6, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:34:6, ngac, policy_query, access_denied('Policy1',(u1,w,'ProjectA'))).
+audit(2021-11-29_10:34:6, ngac, policy_query, access_denied('Policy1',(u2,w,'ProjectB'))).
+audit(2021-11-29_10:34:6, ngac, policy_query, access_denied('Policy1',(u1,w,'GrB-Secret'))).
+audit(2021-11-29_10:34:6, ngac, policy_query, access_denied('Policy1',(u2,w,'GrB-Secret'))).
+audit(2021-11-29_10:34:54, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:34:54, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_10:34:54, ngac, policy_query, access_granted('Policy1',(u1,w,o1))).
+audit(2021-11-29_10:34:54, ngac, policy_query, access_denied('Policy1',(u2,w,o1))).
+audit(2021-11-29_10:34:54, ngac, policy_query, access_denied('Policy1',(u1,w,o2))).
+audit(2021-11-29_10:34:54, ngac, policy_query, access_granted('Policy1',(u2,w,o2))).
+audit(2021-11-29_10:34:54, ngac, policy_query, access_denied('Policy1',(u1,w,o3))).
+audit(2021-11-29_10:34:54, ngac, policy_query, access_granted('Policy1',(u2,w,o3))).
+audit(2021-11-29_10:35:18, ngac, policy_admin, setpol('Policy1',success)).
+audit(2021-11-29_10:35:18, ngac, policy_query, access_granted('Policy1',(u1,w,o1))).
+audit(2021-11-29_10:35:18, ngac, policy_query, access_denied('Policy1',(u2,w,o1))).
+audit(2021-11-29_10:35:18, ngac, policy_query, access_denied('Policy1',(u1,w,o2))).
+audit(2021-11-29_10:35:18, ngac, policy_query, access_granted('Policy1',(u2,w,o2))).
+audit(2021-11-29_10:35:18, ngac, policy_query, access_denied('Policy1',(u1,w,o3))).
+audit(2021-11-29_10:35:18, ngac, policy_query, access_granted('Policy1',(u2,w,o3))).
+audit(2021-11-29_11:4:25, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2021-11-29_11:4:25, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_11:4:25, ngac, policy_query, access_denied('Policy1',(jesper,r,hobbit))).
+audit(2021-11-29_11:4:25, ngac, policy_query, access_denied('Policy1',(ilaman,r,hobbit))).
+audit(2021-11-29_11:4:25, ngac, policy_query, access_denied('Policy1',(jesper,r,bilbe))).
+audit(2021-11-29_11:4:25, ngac, policy_query, access_denied('Policy1',(ilaman,r,bible))).
+audit(2021-11-29_11:4:25, ngac, policy_query, access_denied('Policy1',(jesper,w,hobbit))).
+audit(2021-11-29_11:4:25, ngac, policy_query, access_denied('Policy1',(ilaman,w,bible))).
+audit(2021-11-29_11:4:25, ngac, policy_query, access_denied('Policy1',(jesper,w,hobbit))).
+audit(2021-11-29_11:4:25, ngac, policy_query, access_denied('Policy1',(ilaman,w,bible))).
+audit(2021-11-29_11:5:32, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl','Policy1',success)).
+audit(2021-11-29_11:5:32, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2021-11-29_11:5:32, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_11:5:32, ngac, policy_query, access_granted('Policy1',(jesper,r,hobbit))).
+audit(2021-11-29_11:5:32, ngac, policy_query, access_granted('Policy1',(ilaman,r,hobbit))).
+audit(2021-11-29_11:5:32, ngac, policy_query, access_denied('Policy1',(jesper,r,bilbe))).
+audit(2021-11-29_11:5:32, ngac, policy_query, access_granted('Policy1',(ilaman,r,bible))).
+audit(2021-11-29_11:5:32, ngac, policy_query, access_denied('Policy1',(jesper,w,hobbit))).
+audit(2021-11-29_11:5:32, ngac, policy_query, access_denied('Policy1',(ilaman,w,bible))).
+audit(2021-11-29_11:5:32, ngac, policy_query, access_denied('Policy1',(jesper,w,hobbit))).
+audit(2021-11-29_11:5:32, ngac, policy_query, access_denied('Policy1',(ilaman,w,bible))).
+audit(2021-11-29_11:6:42, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-11-29_11:6:42, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-11-29_11:6:42, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_11:6:42, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-11-29_11:6:42, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2021-11-29_11:6:42, ngac, policy_query, access_denied(test_policy_book,(jesper,r,bilbe))).
+audit(2021-11-29_11:6:42, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2021-11-29_11:6:42, ngac, policy_query, access_denied(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:6:42, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:6:42, ngac, policy_query, access_denied(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:6:42, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:8:21, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-11-29_11:8:21, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-11-29_11:8:21, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_11:8:21, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-11-29_11:8:21, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2021-11-29_11:8:21, ngac, policy_query, access_denied(test_policy_book,(jesper,r,bilbe))).
+audit(2021-11-29_11:8:21, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2021-11-29_11:8:21, ngac, policy_query, access_denied(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:8:21, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:8:21, ngac, policy_query, access_denied(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:8:21, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:9:55, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-11-29_11:9:55, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-11-29_11:9:55, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_11:9:55, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-11-29_11:9:55, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2021-11-29_11:9:55, ngac, policy_query, access_denied(test_policy_book,(jesper,r,bilbe))).
+audit(2021-11-29_11:9:55, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2021-11-29_11:9:55, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:9:55, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:9:55, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:9:55, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:11:13, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-11-29_11:11:13, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-11-29_11:11:13, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_11:11:13, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-11-29_11:11:13, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2021-11-29_11:11:13, ngac, policy_query, access_granted(test_policy_book,(jesper,r,bible))).
+audit(2021-11-29_11:11:13, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2021-11-29_11:11:13, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:11:13, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:11:13, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:11:13, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:21:12, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-11-29_11:21:12, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-11-29_11:21:12, ngac, policy_admin, getpol(success)).
+audit(2021-11-29_11:21:12, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-11-29_11:21:12, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2021-11-29_11:21:12, ngac, policy_query, access_granted(test_policy_book,(jesper,r,bible))).
+audit(2021-11-29_11:21:12, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2021-11-29_11:21:12, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:21:12, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-11-29_11:21:12, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-11-29_11:21:12, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).

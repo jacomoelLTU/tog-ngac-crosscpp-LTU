@@ -1,0 +1,2 @@
+audit(2021-12-15_9:6:28, ngac, ngac_start, success).
+audit(2021-12-15_9:6:34, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).

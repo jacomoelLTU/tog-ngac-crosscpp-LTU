@@ -1,0 +1,95 @@
+audit(2022-2-14_14:5:36, ngac, ngac_start, success).
+audit(2022-2-14_14:5:41, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/combine1.pl',combine1,success)).
+audit(2022-2-14_14:5:53, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/combine1.pl',combine1,success)).
+audit(2022-2-14_14:6:9, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/combine2.pl',combine2,success)).
+audit(2022-2-14_14:6:20, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/combine2.pl',combine2,success)).
+audit(2022-2-14_14:6:23, ngac, policy_admin, combinepol(combine1,combine2,combined,success)).
+audit(2022-2-14_14:6:28, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_14:6:31, ngac, policy_admin, setpol(combined,success)).
+audit(2022-2-14_14:6:34, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_14:7:12, ngac, policy_query, access_denied(combined,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_14:7:14, ngac, policy_query, access_denied(combined,('Ulf',w,'Secret_Document'))).
+audit(2022-2-14_14:7:18, ngac, policy_query, access_denied(combined,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_14:7:25, ngac, policy_admin, setpol(combined1,failure)).
+audit(2022-2-14_14:7:31, ngac, policy_admin, setpol(combine1,success)).
+audit(2022-2-14_14:7:34, ngac, policy_query, access_denied(combine1,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_14:7:35, ngac, policy_query, access_denied(combine1,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_14:8:40, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/combine1.pl',combine1,success)).
+audit(2022-2-14_14:8:43, ngac, policy_admin, setpol(combine1,success)).
+audit(2022-2-14_14:8:47, ngac, policy_query, access_granted(combine1,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_14:8:49, ngac, policy_query, access_granted(combine1,('Ulf',w,'Secret_Document'))).
+audit(2022-2-14_14:9:9, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/combine1.pl',combine1,success)).
+audit(2022-2-14_14:9:12, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/combine2.pl',combine1,success)).
+audit(2022-2-14_14:9:14, ngac, policy_admin, combinepol(combine1,combine2,combined,success)).
+audit(2022-2-14_14:9:16, ngac, policy_admin, setpol(combined,success)).
+audit(2022-2-14_14:9:24, ngac, policy_admin, getpol(success)).
+audit(2022-2-14_14:9:28, ngac, policy_query, access_granted(combined,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_14:9:30, ngac, policy_query, access_denied(combined,('Ulf',w,'Secret_Document'))).
+audit(2022-2-14_14:9:32, ngac, policy_query, access_denied(combined,('Ulf',w,'Secret_Document'))).
+audit(2022-2-14_14:9:32, ngac, policy_query, access_denied(combined,('Ulf',w,'Secret_Document'))).
+audit(2022-2-14_14:9:34, ngac, policy_query, access_granted(combined,('Ulf',r,'Secret_Document'))).
+audit(2022-2-14_14:10:52, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:10:52, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:10:52, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:10:52, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:10:52, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:10:52, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:10:52, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:10:52, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:10:52, ngac, policy_query, access_denied(combined,(u2,read,o1))).
+audit(2022-2-14_14:13:59, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:13:59, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:13:59, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:13:59, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:13:59, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:13:59, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:13:59, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:13:59, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:13:59, ngac, policy_query, access_denied(combined,(u2,read,o1))).
+audit(2022-2-14_14:15:5, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:5, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:5, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:5, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:5, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:5, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:5, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:5, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:5, ngac, policy_query, access_denied(combined,(u2,read,o1))).
+audit(2022-2-14_14:15:36, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:36, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:36, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:36, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:36, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:36, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:36, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:36, ngac, policy_admin, 'authentication error').
+audit(2022-2-14_14:15:36, ngac, policy_query, access_denied(combined,(u2,read,o1))).
+audit(2022-2-14_14:17:0, ngac, policy_admin, load('EXAMPLES/EXAMPLES/book_lift.pl',book_lift,success)).
+audit(2022-2-14_14:17:0, ngac, policy_admin, load('EXAMPLES/EXAMPLES/book_room.pl',book_room,success)).
+audit(2022-2-14_14:17:1, ngac, policy_admin, load('EXAMPLES/EXAMPLES/read_file.pl',read_file,success)).
+audit(2022-2-14_14:17:1, ngac, policy_admin, setpol(book_lift,success)).
+audit(2022-2-14_14:17:1, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(book_lift,(u1,book,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(book_lift,(u2,book,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(book_lift,(u3,book,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(book_lift,(u3,book,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(book_lift,(u1,book,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(book_lift,(u2,book,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(book_lift,(u1,book,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(book_lift,(u2,book,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_admin, setpol(book_room,success)).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(book_room,(u1,book,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(book_room,(u2,book,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(book_room,(u3,book,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(book_room,(u3,book,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(book_room,(u1,book,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(book_room,(u2,book,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(book_room,(u1,book,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(book_room,(u2,book,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_admin, setpol(read_file,success)).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(read_file,(u1,read,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(read_file,(u2,read,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(read_file,(u3,read,o1))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_granted(read_file,(u3,read,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(read_file,(u1,read,o2))).
+audit(2022-2-14_14:17:1, ngac, policy_query, access_denied(read_file,(u2,read,o1))).

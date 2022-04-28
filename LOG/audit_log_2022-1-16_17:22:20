@@ -1,0 +1,90 @@
+audit(2022-1-16_17:22:20, ngac, ngac_start, success).
+audit(2022-1-16_17:25:33, ngac, policy_admin, loadi('policy(ipolicy,access,[\n\tuser(u1),\n\tuser_attribute(ua1),\n\tobject(o1),\n\tobject_attribute(oa1),\n\tpolicy_class(access),\n\tconnector(\'PM\'),\n\tassign(u1,ua1),\n\tassign(o1,oa1),\n\tassign(ua1,access),\n\tassign(oa1,access),\n\tassign(access,\'PM\'),\n\tassociate(ua1,[r,w],oa1)])',ipolicy,success)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, add(ipolicy,assign('User 1',uattr1),failure)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, delete(ipolicy,assign('User 1',uattr1),failure)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, add(ipolicy,user(u3),success)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, delete(ipolicy,user(u3),success)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, delete(ipolicy,user(u3),failure)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, add(ipolicy,user(u4),success)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, delete(ipolicy,user(u4),success)).
+audit(2022-1-16_17:25:33, ngac, policy_admin, deletem(ipolicy,'elements deleted')).
+audit(2022-1-16_17:25:33, ngac, policy_admin, addm(ipolicy,'elements added')).
+audit(2022-1-16_17:25:47, ngac, policy_admin, loadi('policy(ipolicy,access,[\n\tuser(u1),\n\tuser_attribute(ua1),\n\tobject(o1),\n\tobject_attribute(oa1),\n\tpolicy_class(access),\n\tconnector(\'PM\'),\n\tassign(u1,ua1),\n\tassign(o1,oa1),\n\tassign(ua1,access),\n\tassign(oa1,access),\n\tassign(access,\'PM\'),\n\tassociate(ua1,[r,w],oa1)])',ipolicy,success)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, add(ipolicy,assign('User 1',uattr1),failure)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, delete(ipolicy,assign('User 1',uattr1),failure)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, add(ipolicy,user(u3),success)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, delete(ipolicy,user(u3),success)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, delete(ipolicy,user(u3),failure)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, add(ipolicy,user(u4),success)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, delete(ipolicy,user(u4),success)).
+audit(2022-1-16_17:25:47, ngac, policy_admin, deletem(ipolicy,'elements deleted')).
+audit(2022-1-16_17:25:47, ngac, policy_admin, addm(ipolicy,'elements added')).
+audit(2022-1-16_17:58:44, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_17:59:12, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_17:59:12, ngac, policy_admin, readpol(test_policy_book,failure)).
+audit(2022-1-16_17:59:40, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_17:59:40, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2022-1-16_17:59:40, ngac, policy_admin, readpol(test_policy_book,failure)).
+audit(2022-1-16_18:0:4, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:1:33, ngac, policy_admin, setpol(policy1,failure)).
+audit(2022-1-16_18:1:33, ngac, policy_admin, readpol(policy1,failure)).
+audit(2022-1-16_18:1:33, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2022-1-16_18:1:33, ngac, policy_admin, readpol(test_policy_book,failure)).
+audit(2022-1-16_18:1:52, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:1:52, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:6:5, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:7:28, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:7:28, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:8:2, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:8:2, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:9:5, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:9:5, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:9:22, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:9:22, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:9:40, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:9:40, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2022-1-16_18:9:40, ngac, policy_admin, readpol(test_policy_book,failure)).
+audit(2022-1-16_18:10:37, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:10:37, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2022-1-16_18:10:37, ngac, policy_admin, readpol(test_policy_book,failure)).
+audit(2022-1-16_18:11:3, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:11:3, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2022-1-16_18:11:3, ngac, policy_admin, readpol(test_policy_book,failure)).
+audit(2022-1-16_18:11:49, ngac, policy_admin, loadi('policy(ipolicy,access,[\n\tuser(u1),\n    user(u2),\n\tuser_attribute(ua1),\n\tobject(o1),\n\tobject_attribute(oa1),\n\tpolicy_class(access),\n\tconnector(\'PM\'),\n\tassign(u1,ua1),\n\tassign(o1,oa1),\n\tassign(ua1,access),\n\tassign(oa1,access),\n\tassign(access,\'PM\'),\n\tassociate(ua1,[r,w],oa1)])',ipolicy,success)).
+audit(2022-1-16_18:11:50, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:11:50, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2022-1-16_18:11:50, ngac, policy_admin, readpol(test_policy_book,failure)).
+audit(2022-1-16_18:13:3, ngac, policy_admin, loadi('policy(ipolicy,access,[\n\tuser(u1),\n    user(u2),\n\tuser_attribute(ua1),\n\tobject(o1),\n\tobject_attribute(oa1),\n\tpolicy_class(access),\n\tconnector(\'PM\'),\n\tassign(u1,ua1),\n\tassign(o1,oa1),\n\tassign(ua1,access),\n\tassign(oa1,access),\n\tassign(access,\'PM\'),\n\tassociate(ua1,[r,w],oa1)])',ipolicy,success)).
+audit(2022-1-16_18:13:3, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:13:3, ngac, policy_admin, setpol(test_policy_book,failure)).
+audit(2022-1-16_18:13:3, ngac, policy_admin, readpol(test_policy_book,failure)).
+audit(2022-1-16_18:14:14, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:14:14, ngac, policy_admin, loadi('\n    policy(test_policy_book,\'Project Access\', [\n\n        user(\'jesper\'),\n        user(\'ilaman\'),\n\n        user_attribute(\'Writer\'),\n        user_attribute(\'Reader\'),\n        user_attribute(\'Library\'),\n\n        object(\'hobbit\'),\n        object(\'bible\'),\n\n        object_attribute(\'Fantasy\'),\n        object_attribute(\'Religious\'),\n        object_attribute(\'Books\'),\n\n        policy_class(\'Project Access\'),\n\n        connector(\'PM\'),\n\n        assign(\'jesper\',\'Writer\'),\n        assign(\'ilaman\',\'Reader\'),\n        assign(\'Writer\',\'Library\'),\n        assign(\'Reader\',\'Library\'),\n        assign(\'hobbit\',\'Fantasy\'),\n        assign(\'bible\',\'Religious\'),\n        assign(\'Fantasy\',\'Books\'),\n        assign(\'Religious\',\'Books\'),\n        assign(\'Library\',\'Project Access\'),\n        assign(\'Books\',\'Project Access\'),\n        assign(\'Project Access\',\'PM\'),\n\n        associate(\'Writer\',[w],\'Fantasy\'),\n        associate(\'Writer\',[w],\'Religious\'),\n        associate(\'Library\',[r],\'Books\')\n    ]).',test_policy_book,success)).
+audit(2022-1-16_18:14:14, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2022-1-16_18:14:33, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_18:14:33, ngac, policy_admin, loadi('\n    policy(test_policy_book,\'Project Access\', [\n\n        user(\'jesper\'),\n        user(\'ilaman\'),\n\n        user_attribute(\'Writer\'),\n        user_attribute(\'Reader\'),\n        user_attribute(\'Library\'),\n\n        object(\'hobbit\'),\n        object(\'bible\'),\n\n        object_attribute(\'Fantasy\'),\n        object_attribute(\'Religious\'),\n        object_attribute(\'Books\'),\n\n        policy_class(\'Project Access\'),\n\n        connector(\'PM\'),\n\n        assign(\'jesper\',\'Writer\'),\n        assign(\'ilaman\',\'Reader\'),\n        assign(\'Writer\',\'Library\'),\n        assign(\'Reader\',\'Library\'),\n        assign(\'hobbit\',\'Fantasy\'),\n        assign(\'bible\',\'Religious\'),\n        assign(\'Fantasy\',\'Books\'),\n        assign(\'Religious\',\'Books\'),\n        assign(\'Library\',\'Project Access\'),\n        assign(\'Books\',\'Project Access\'),\n        assign(\'Project Access\',\'PM\'),\n\n        associate(\'Writer\',[w],\'Fantasy\'),\n        associate(\'Writer\',[w],\'Religious\'),\n        associate(\'Library\',[r],\'Books\')\n    ]).',test_policy_book,success)).
+audit(2022-1-16_18:14:33, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2022-1-16_18:14:33, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2022-1-16_19:56:13, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_19:56:14, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2022-1-16_19:56:14, ngac, policy_admin, getpol(success)).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_granted(test_policy_book,(jesper,r,bible))).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,hobbit))).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_granted(test_policy_book,(jesper,w,bible))).
+audit(2022-1-16_19:56:14, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2022-1-16_19:56:31, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2022-1-16_19:56:53, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:2:17, ngac, policy_admin, load(test1,failure)).
+audit(2022-1-16_20:9:5, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:9:23, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:9:46, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:9:54, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:11:15, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2022-1-16_20:11:31, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).

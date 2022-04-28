@@ -1,0 +1,4 @@
+audit(2022-1-17_13:4:33, ngac, ngac_start, success).
+audit(2022-1-17_13:4:38, ngac, policy_admin, loadi('policy(test,access,[            user(u1),            user_attribute(ua1),            object(o1),            object_attribute(oa1),            policy_class(access),            connector(\'PM\'),            assign(u1,ua1),            assign(o1,oa1),            assign(ua1,access),            assign(oa1,access),            assign(access,\'PM\'),            associate(ua1,[r,w],oa1)])        ',test,success)).
+audit(2022-1-17_13:5:34, ngac, policy_admin, setpol(test,success)).
+audit(2022-1-17_13:5:43, ngac, policy_admin, setpol(test1,failure)).

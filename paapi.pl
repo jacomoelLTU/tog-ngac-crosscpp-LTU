@@ -15,6 +15,8 @@
 :- use_module(library(http/http_header)).
 :- use_module(library(http/http_parameters)).
 
+:- use_module(library(http/http_cors)).
+
 % Policy Administration Web API
 :- http_handler(root(paapi), root_apis(paapi), []).
 :- http_handler(root('paapi/'), api_unimpl, [prefix]).
@@ -587,8 +589,12 @@ list_apis(Kind) :-
 
 std_resp_prefix :-
 	(   param:jsonresp(on)
-	->  format('Content-type: application/json~n~n')
-	;   format('Content-type: text/plain~n~n')
+	->  cors_enable,
+	    format('Content-type: application/json~n~n')
+	    
+	;   cors_enable,
+	    format('Content-type: text/plain~n~n')
+	    
 	).
 
 std_resp_MS(Status, M, B) :-

@@ -1,0 +1,5 @@
+epp_log(2021-12-13_17:59:23, epp_context_change, [weekday:true,business:true]).
+epp_log(2021-12-13_17:59:23, report_event, event(context_change,x,x,x,x)).
+epp_log(2021-12-13_17:59:23, 'matched patterns in report_event', []).
+epp_log(2021-12-13_17:59:23, event_processing, context_notify([weekday:true,business:true],success)).
+epp_log(2021-12-13_17:59:23, epp_started, policy_server).

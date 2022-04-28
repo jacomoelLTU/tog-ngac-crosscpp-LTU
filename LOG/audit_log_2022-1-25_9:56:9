@@ -1,0 +1,4 @@
+audit(2022-1-25_9:56:9, ngac, ngac_start, success).
+audit(2022-1-25_10:15:1, ngac, policy_admin, getpol(success)).
+audit(2022-1-25_15:54:12, ngac, policy_admin, getpol(success)).
+audit(2022-1-25_15:54:13, ngac, policy_admin, getpol(success)).

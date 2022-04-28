@@ -1,0 +1,13 @@
+audit(2021-11-27_20:48:11, ngac, ngac_start, success).
+audit(2021-11-27_20:53:19, ngac, policy_admin, setpol('Policy (a)',success)).
+audit(2021-11-27_20:53:20, ngac, policy_admin, getpol(success)).
+audit(2021-11-27_20:53:20, ngac, policy_query, access_granted('Policy (a)',(u1,r,o1))).
+audit(2021-11-27_20:53:20, ngac, policy_query, access_granted('Policy (a)',(u1,w,o1))).
+audit(2021-11-27_20:53:20, ngac, policy_query, access_granted('Policy (a)',(u1,r,o2))).
+audit(2021-11-27_20:53:20, ngac, policy_query, access_denied('Policy (a)',(u1,w,o2))).
+audit(2021-11-27_20:53:20, ngac, policy_admin, setpol('Policy (b)',success)).
+audit(2021-11-27_20:53:20, ngac, policy_admin, getpol(success)).
+audit(2021-11-27_20:53:20, ngac, policy_query, access_denied('Policy (b)',(u1,r,o1))).
+audit(2021-11-27_20:53:20, ngac, policy_query, access_denied('Policy (b)',(u1,w,o1))).
+audit(2021-11-27_20:53:20, ngac, policy_query, access_granted('Policy (b)',(u1,r,o2))).
+audit(2021-11-27_20:53:20, ngac, policy_query, access_granted('Policy (b)',(u1,w,o2))).

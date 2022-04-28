@@ -455,7 +455,7 @@ do(policy_graph(P,Fileroot)) :- !, dpl:policy(P,_),
 	close(DOT,[force(true)]),
 	set_output(Old),
 	atomic_list_concat(['dot -Tpng ', DOTfile , ' >', PNGfile], DotCommand),
-	atomic_concat('open ', PNGfile, OpenCommand),
+	atomic_concat('xdg-open ', PNGfile, OpenCommand), % Edit open to xdg-open to work on ubuntu, open is for windows
 	shell(DotCommand,_), shell(OpenCommand,_),
 	(   param:graph_tmp_file(Fileroot)
 	->  sleep(2), delete_file(DOTfile), delete_file(PNGfile)

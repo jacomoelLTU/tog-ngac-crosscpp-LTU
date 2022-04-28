@@ -1,0 +1,12 @@
+audit(2022-4-27_8:56:11, ngac, ngac_start, success).
+audit(2022-4-27_9:50:14, ngac, policy_admin, load('policy1.pl',failure)).
+audit(2022-4-27_9:51:40, ngac, policy_admin, load('policy1.pl',failure)).
+audit(2022-4-27_9:51:40, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-4-27_9:59:39, ngac, policy_admin, load('policy1.pl',failure)).
+audit(2022-4-27_10:0:1, ngac, policy_admin, load('policy1.pl',failure)).
+audit(2022-4-27_10:0:1, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-4-27_10:20:39, ngac, policy_admin, load('policy1.pl',failure)).
+audit(2022-4-27_10:20:39, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-4-27_10:24:53, ngac, policy_admin, load('policy1.pl',failure)).
+audit(2022-4-27_10:24:53, ngac, policy_admin, setpol('Policy1',failure)).
+audit(2022-4-27_10:24:53, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).

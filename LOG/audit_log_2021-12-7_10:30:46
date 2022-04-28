@@ -1,0 +1,6 @@
+audit(2021-12-7_10:30:46, ngac, ngac_start, success).
+audit(2021-12-7_10:43:24, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-12-7_10:43:34, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-12-7_10:43:37, ngac, policy_admin, getpol(success)).
+audit(2021-12-7_10:43:40, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-7_10:48:21, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).

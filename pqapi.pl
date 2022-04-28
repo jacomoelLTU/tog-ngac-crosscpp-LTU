@@ -9,6 +9,9 @@
 :- use_module(domains).
 :- use_module(jsonresp).
 
+:- use_module(library(http/http_cors)).
+:- use_module(library(settings)).
+
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 :- use_module(library(http/http_wrapper)).
@@ -36,6 +39,7 @@ pqapi([access,accessm,caccess,users,getobjectinfo]). % POLICY QUERY API
 :- http_handler(root(gpqapi/ggetinfo), gpqapi_ggetinfo, [prefix]).
 
 gpqapi([gaccess,ggetinfo]). % GLOBAL POLICY QUERY API
+
 
 
 %
@@ -409,7 +413,8 @@ std_resp_BS(Status, M, B) :-
 std_resp_M(Status, M, B) :-
 	(   param:jsonresp(on)
 	->  json_resp(Status, M, B)
-	;   writeln(M)
+	;   
+	writeln(M)
 	).
 
 %

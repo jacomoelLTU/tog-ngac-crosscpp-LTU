@@ -136,7 +136,7 @@ register_for_context_change_notification(Names,NOTIF_URL,Token) :- param:crosscp
     % for testing call the sim anyway after showing the call
     format('Perform CME handshake: ~q~n',[Call]),
     http_get(Call,CallResult,[]), % call the CME
-    % format('CallResult=~w',[CallResult]),
+    format('CallResult=~w',[CallResult]),
     (   CallResult == 'success\n'
     ->  format('CME handshake successful~n')
     ;   format('CME handshake unrecognized response~n')

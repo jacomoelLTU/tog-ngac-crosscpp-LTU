@@ -1,0 +1,56 @@
+audit(2021-12-8_9:57:28, ngac, ngac_start, success).
+audit(2021-12-8_10:0:7, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-12-8_10:0:7, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-12-8_10:0:7, ngac, policy_admin, getpol(success)).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_granted(test_policy_book,(jesper,r,bible))).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,hobbit))).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_granted(test_policy_book,(jesper,w,bible))).
+audit(2021-12-8_10:0:7, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-12-8_10:0:14, ngac, policy_query, access_denied(test_policy_book,(u1,r,hobbit))).
+audit(2021-12-8_10:5:43, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:7:40, ngac, policy_query, access_denied(test_policy_book,(u1,r,hobbit))).
+audit(2021-12-8_10:8:10, ngac, policy_query, access_denied(test_policy_book,(u1,r,hobbit))).
+audit(2021-12-8_10:10:44, ngac, policy_admin, setpol('Policy (a)',success)).
+audit(2021-12-8_10:10:44, ngac, policy_admin, getpol(success)).
+audit(2021-12-8_10:10:44, ngac, policy_query, access_granted('Policy (a)',(u1,r,o1))).
+audit(2021-12-8_10:10:44, ngac, policy_query, access_granted('Policy (a)',(u1,w,o1))).
+audit(2021-12-8_10:10:44, ngac, policy_query, access_granted('Policy (a)',(u1,r,o2))).
+audit(2021-12-8_10:10:49, ngac, policy_query, access_denied('Policy (a)',(u1,w,o2))).
+audit(2021-12-8_10:12:4, ngac, policy_query, access_granted('Policy (a)',(u1,r,o1))).
+audit(2021-12-8_10:12:31, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-12-8_10:12:31, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-12-8_10:12:31, ngac, policy_admin, getpol(success)).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_granted(test_policy_book,(jesper,r,bible))).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,hobbit))).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_granted(test_policy_book,(jesper,w,bible))).
+audit(2021-12-8_10:12:31, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-12-8_10:12:52, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:14:11, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:15:9, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:15:17, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:15:50, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-12-8_10:16:17, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_10:22:46, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_11:28:8, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_11:28:56, ngac, policy_admin, load('EXAMPLES/d0020e_EXAMPLES/policy_book.pl',test_policy_book,success)).
+audit(2021-12-8_11:28:56, ngac, policy_admin, setpol(test_policy_book,success)).
+audit(2021-12-8_11:28:56, ngac, policy_admin, getpol(success)).
+audit(2021-12-8_11:28:56, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
+audit(2021-12-8_11:28:56, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,hobbit))).
+audit(2021-12-8_11:28:56, ngac, policy_query, access_granted(test_policy_book,(jesper,r,bible))).
+audit(2021-12-8_11:28:56, ngac, policy_query, access_granted(test_policy_book,(ilaman,r,bible))).
+audit(2021-12-8_11:28:56, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-12-8_11:28:56, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-12-8_11:28:56, ngac, policy_query, access_granted(test_policy_book,(jesper,w,hobbit))).
+audit(2021-12-8_11:28:56, ngac, policy_query, access_denied(test_policy_book,(ilaman,w,bible))).
+audit(2021-12-8_12:32:54, ngac, policy_query, access_granted(test_policy_book,(jesper,r,hobbit))).
