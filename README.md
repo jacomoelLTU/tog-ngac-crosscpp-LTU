@@ -1,2 +1,2 @@
 # tog-ngac-crosscpp
-Context Sensitive Security Framework for Cross-CPP Project
+The Open Group's implementation of NGAC with minor modifications and added testfiles from various students at Luleå University of Technology
