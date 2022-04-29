@@ -27,7 +27,7 @@ echo 'Test Sensor write without condition (should grant)'
 curl -s 'http://127.0.0.1:8001/pqapi/access?user=Sensor&ar=w&object=SensorData'
 
 echo ''
-echo 'Test user read with condition (should grant)'
+echo 'Test User read with condition (should grant)'
 curl -s "http://127.0.0.1:8001/pqapi/access?user=User&object=SensorData&ar=r&cond=time_conditional_read(1651142811345,1651142816345)"
 
 echo ''
@@ -35,17 +35,13 @@ echo 'Test Admin read without condition (should grant)'
 curl -s 'http://127.0.0.1:8001/pqapi/access?user=Admin&ar=r&object=SensorData'
 
 echo ''
-echo 'Test Admin write CommonFile without condition (should grant)'
+echo 'Test Admin write without condition (should grant)'
 curl -s 'http://127.0.0.1:8001/pqapi/access?user=Admin&ar=w&object=SensorData'
 
 echo ''
-echo 'Test Admin read without condition (should grant)'
-curl -s 'http://127.0.0.1:8001/pqapi/access?user=Admin&ar=r&object=SensorData'
-
-echo ''
-echo 'Test Admin read CommonFile with condition (should grant)'
+echo 'Test Admin read with condition (should grant)'
 curl -s 'http://127.0.0.1:8001/pqapi/access?user=Admin&ar=r&object=SensorData&cond=time_conditional_read(1651142811345,1651142816345)'
 
 echo ''
-echo 'Test Admin write CommonFile with condition (should grant)'
+echo 'Test Admin write with condition (should grant)'
 curl -s 'http://127.0.0.1:8001/pqapi/access?user=Admin&ar=w&object=SensorData&cond=time_conditional_read(1651142811345,1651142816345)'
