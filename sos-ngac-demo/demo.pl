@@ -1,33 +1,68 @@
 policy('sosngacdemo','SoS NGAC Demo', [
 
-	user('User'),
-	user('Sensor'),
-	user('Admin'),
+	user('User1'),
+	user('User2'),
+	user('User3'),
 
-	user_attribute('HostA'),
-	user_attribute('SensorA'),
-	user_attribute('Administrator'),
+	user_attribute('Group1'),
+	user_attribute('Group2'),
+	#user_attribute('Group3'),
 
-	object('SensorData'),
-	object_attribute('ZoneA'),
+	object('S1'),
+	object('S2'),
+	object('S3'),
 
-	policy_class('SoS NGAC Demo'),
+	object_attribute('TempSensor'),
+	object_attribute('Thermostat'),
+
+	policy_class('2023Demo1'),
 	connector('PM'),
 
-	assign('User','HostA'),
-	assign('Sensor','SensorA'),
-	assign('SensorData','ZoneA'),
-	assign('Admin','Administrator'),
+	assign('User1','Group1'),
+	assign('User2','Group1'),
+	assign('User3', 'Group2'),
+
+	assign('S1', 'TempSensor'),
+	assign('S2', 'TempSensor'),
+	assing('S3', 'Thermostat'),
+
+	assign('Group1', '2023Demo1'),
+	assign('Group2', '2023Demo1'),
+	assign('TempSensor', '2023Demo1'),
+	assign('Thermostat', '2023Demo1'),
+	assign('2023Demo1', 'PM'),
+
+	associate('Group1', [r], 'TempSensor'),
+	associate('Group2', [r,w], 'Thermostat'),
+
+	# user('User'),
+	# user('Sensor'),
+	# user('Admin'),
+
+	# user_attribute('HostA'),
+	# user_attribute('SensorA'),
+	# user_attribute('Administrator'),
+
+	# object('SensorData'),
+	# object_attribute('ZoneA'),
+
+	# policy_class('SoS NGAC Demo'),
+	# connector('PM'),
+
+	# assign('User','HostA'),
+	# assign('Sensor','SensorA'),
+	# assign('SensorData','ZoneA'),
+	# assign('Admin','Administrator'),
        
-	assign('HostA', 'SoS NGAC Demo'),
-	assign('SensorA','SoS NGAC Demo'),
-	assign('ZoneA','SoS NGAC Demo'),
-	assign('Administrator','SoS NGAC Demo'),
-	assign('SoS NGAC Demo','PM'),
+	# assign('HostA', 'SoS NGAC Demo'),
+	# assign('SensorA','SoS NGAC Demo'),
+	# assign('ZoneA','SoS NGAC Demo'),
+	# assign('Administrator','SoS NGAC Demo'),
+	# assign('SoS NGAC Demo','PM'),
 	
-	associate('SensorA',[w],'ZoneA'),
-	associate('Administrator',[r,w],'ZoneA'),
+	# associate('SensorA',[w],'ZoneA'),
+	# associate('Administrator',[r,w],'ZoneA'),
        
-	cond(time_conditional_read(_,_), associate('HostA',[r],'ZoneA')  )
+	# cond(time_conditional_read(_,_), associate('HostA',[r],'ZoneA')  )
        
 ]).

@@ -1,0 +1,11 @@
+audit(2022-11-24_15:19:52, ngac, ngac_start, success).
+audit(2022-11-24_15:21:58, ngac, policy_admin, load('sos-ngac-demo/demo.pl',sosngacdemo,success)).
+audit(2022-11-24_15:21:58, ngac, policy_admin, setpol(sosngacdemo,success)).
+audit(2022-11-24_15:21:59, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2022-11-24_15:21:59, ngac, policy_query, access_denied(sosngacdemo,('User',r,'SensorData'))).
+audit(2022-11-24_15:21:59, ngac, policy_query, access_granted(sosngacdemo,('Sensor',w,'SensorData'))).
+audit(2022-11-24_15:21:59, ngac, policy_query, access_granted(sosngacdemo,('User',r,'SensorData'))).
+audit(2022-11-24_15:21:59, ngac, policy_query, access_granted(sosngacdemo,('Admin',r,'SensorData'))).
+audit(2022-11-24_15:21:59, ngac, policy_query, access_granted(sosngacdemo,('Admin',w,'SensorData'))).
+audit(2022-11-24_15:21:59, ngac, policy_query, access_granted(sosngacdemo,('Admin',r,'SensorData'))).
+audit(2022-11-24_15:21:59, ngac, policy_query, access_granted(sosngacdemo,('Admin',w,'SensorData'))).
