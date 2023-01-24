@@ -1,0 +1,208 @@
+audit(2023-1-23_9:6:26, ngac, ngac_start, success).
+audit(2023-1-23_9:12:40, ngac, policy_admin, load('sos-ngac-demo/demo.pl',sosngacdemo,success)).
+audit(2023-1-23_9:12:40, ngac, policy_admin, setpol(sosngacdemo,success)).
+audit(2023-1-23_9:12:40, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2023-1-23_9:12:40, ngac, policy_query, access_denied(sosngacdemo,('User',r,'SensorData'))).
+audit(2023-1-23_9:12:40, ngac, policy_query, access_granted(sosngacdemo,('Sensor',w,'SensorData'))).
+audit(2023-1-23_9:12:40, ngac, policy_query, access_granted(sosngacdemo,('User',r,'SensorData'))).
+audit(2023-1-23_9:12:40, ngac, policy_query, access_granted(sosngacdemo,('Admin',r,'SensorData'))).
+audit(2023-1-23_9:12:40, ngac, policy_query, access_granted(sosngacdemo,('Admin',w,'SensorData'))).
+audit(2023-1-23_9:12:40, ngac, policy_query, access_granted(sosngacdemo,('Admin',r,'SensorData'))).
+audit(2023-1-23_9:12:40, ngac, policy_query, access_granted(sosngacdemo,('Admin',w,'SensorData'))).
+audit(2023-1-23_9:25:0, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_9:25:0, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S1'))).
+audit(2023-1-23_9:25:0, ngac, policy_query, access_denied(sosngacdemo,('User2',r,'S2'))).
+audit(2023-1-23_9:25:0, ngac, policy_query, access_denied(sosngacdemo,('User3',r,'S3'))).
+audit(2023-1-23_9:25:1, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S3'))).
+audit(2023-1-23_9:25:1, ngac, policy_query, access_denied(sosngacdemo,('User3',w,'S3'))).
+audit(2023-1-23_9:33:42, ngac, policy_admin, loadi('policy(ExPolicy1,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'access\'),\n    object_attribute(\'access\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_9:33:42, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_9:33:42, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S1'))).
+audit(2023-1-23_9:33:42, ngac, policy_query, access_denied(sosngacdemo,('User2',r,'S2'))).
+audit(2023-1-23_9:33:42, ngac, policy_query, access_denied(sosngacdemo,('User3',r,'S3'))).
+audit(2023-1-23_9:33:42, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S3'))).
+audit(2023-1-23_9:33:42, ngac, policy_query, access_denied(sosngacdemo,('User3',w,'S3'))).
+audit(2023-1-23_9:47:52, ngac, policy_admin, loadi('policy(ExPolicy1,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'access\'),\n    object_attribute(\'access\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_9:47:52, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_9:47:52, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S1'))).
+audit(2023-1-23_9:47:52, ngac, policy_query, access_denied(sosngacdemo,('User2',r,'S2'))).
+audit(2023-1-23_9:47:52, ngac, policy_query, access_denied(sosngacdemo,('User3',r,'S3'))).
+audit(2023-1-23_9:47:52, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S3'))).
+audit(2023-1-23_9:47:52, ngac, policy_query, access_denied(sosngacdemo,('User3',w,'S3'))).
+audit(2023-1-23_9:49:30, ngac, policy_admin, loadi('policy(ExPolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'access\'),\n    object_attribute(\'access\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_9:49:30, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_9:49:30, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S1'))).
+audit(2023-1-23_9:49:30, ngac, policy_query, access_denied(sosngacdemo,('User2',r,'S2'))).
+audit(2023-1-23_9:49:30, ngac, policy_query, access_denied(sosngacdemo,('User3',r,'S3'))).
+audit(2023-1-23_9:49:30, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S3'))).
+audit(2023-1-23_9:49:30, ngac, policy_query, access_denied(sosngacdemo,('User3',w,'S3'))).
+audit(2023-1-23_9:51:23, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'access\'),\n    object_attribute(\'access\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_9:51:23, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_9:51:23, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S1'))).
+audit(2023-1-23_9:51:23, ngac, policy_query, access_denied(sosngacdemo,('User2',r,'S2'))).
+audit(2023-1-23_9:51:23, ngac, policy_query, access_denied(sosngacdemo,('User3',r,'S3'))).
+audit(2023-1-23_9:51:23, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S3'))).
+audit(2023-1-23_9:51:23, ngac, policy_query, access_denied(sosngacdemo,('User3',w,'S3'))).
+audit(2023-1-23_10:15:37, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'access\'),\n    object_attribute(\'access\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_10:15:37, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_10:15:37, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S1'))).
+audit(2023-1-23_10:15:37, ngac, policy_query, access_denied(sosngacdemo,('User2',r,'S2'))).
+audit(2023-1-23_10:15:37, ngac, policy_query, access_denied(sosngacdemo,('User3',r,'S3'))).
+audit(2023-1-23_10:15:37, ngac, policy_query, access_denied(sosngacdemo,('User1',r,'S3'))).
+audit(2023-1-23_10:15:37, ngac, policy_query, access_denied(sosngacdemo,('User3',w,'S3'))).
+audit(2023-1-23_10:15:57, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'access\'),\n    object_attribute(\'access\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_10:15:57, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_10:15:57, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_10:15:57, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_10:15:57, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_10:15:57, ngac, policy_query, access_denied(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_10:15:57, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_10:15:57, ngac, policy_query, access_denied(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_10:17:23, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'access\'),\n    object_attribute(\'access\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_10:17:23, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_10:17:23, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_10:17:23, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_10:17:23, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_10:17:23, ngac, policy_query, access_denied(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_10:17:23, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_10:17:23, ngac, policy_query, access_denied(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_10:41:10, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_10:41:10, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_10:41:10, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_10:41:10, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_10:41:10, ngac, policy_query, access_denied(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_10:41:10, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_10:41:10, ngac, policy_query, access_denied(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_10:57:5, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_10:57:5, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_10:57:5, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_10:57:5, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_10:57:5, ngac, policy_query, access_denied(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_10:57:5, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_10:57:5, ngac, policy_query, access_denied(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_11:0:55, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'TempSensor\'),\n    object_attribute(\'Thermostat\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_11:0:55, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_11:0:55, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_11:0:55, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_11:0:55, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_11:0:55, ngac, policy_query, access_denied(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_11:0:55, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_11:0:56, ngac, policy_query, access_denied(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_11:30:5, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_11:30:5, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_11:30:5, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_11:31:9, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user_attribute(\'Group1\'),\n    object(\'S1\'),\n    object_attribute(\'TempSensor\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\')])',ipolicy,success)).
+audit(2023-1-23_11:31:9, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_11:31:9, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_11:31:9, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:38:6, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object_attribute(\'TempSensorZoneA\'),\n    object_attribute(\'TempsensorZoneB\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\', \'Group2\'),\n    assign(\'S1\', \'TempSensor_ZoneA\'),\n    assign(\'S2\', \'TempSensor_ZoneB\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensorZoneA\'),\n    associate(\'Group2\', [r], \'TempSensorZoneB\')])',ipolicy,success)).
+audit(2023-1-23_12:38:6, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_12:38:6, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_12:38:6, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:38:6, ngac, policy_query, access_denied(ipolicy,('User1',r,'S2'))).
+audit(2023-1-23_12:38:6, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_12:38:6, ngac, policy_query, access_denied(ipolicy,('User2',r,'S1'))).
+audit(2023-1-23_12:39:53, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object_attribute(\'TempSensorZoneA\'),\n    object_attribute(\'TempsensorZoneB\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\', \'Group2\'),\n    assign(\'S1\', \'TempSensor_ZoneA\'),\n    assign(\'S2\', \'TempSensor_ZoneB\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensorZoneA\'),\n    associate(\'Group2\', [r], \'TempSensorZoneB\')])',ipolicy,success)).
+audit(2023-1-23_12:39:53, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_12:39:53, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_12:39:53, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:39:53, ngac, policy_query, access_denied(ipolicy,('User1',r,'S2'))).
+audit(2023-1-23_12:39:53, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_12:39:53, ngac, policy_query, access_denied(ipolicy,('User2',r,'S1'))).
+audit(2023-1-23_12:43:7, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object_attribute(\'TempSensorZoneA\'),\n    object_attribute(\'TempsensorZoneB\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\', \'Group2\'),\n    assign(\'S1\', \'TempSensorZoneA\'),\n    assign(\'S2\', \'TempSensorZoneB\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensorZoneA\'),\n    associate(\'Group2\', [r], \'TempSensorZoneB\')])',ipolicy,success)).
+audit(2023-1-23_12:43:7, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_12:43:7, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_12:43:7, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:43:8, ngac, policy_query, access_denied(ipolicy,('User1',r,'S2'))).
+audit(2023-1-23_12:43:8, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_12:43:8, ngac, policy_query, access_denied(ipolicy,('User2',r,'S1'))).
+audit(2023-1-23_12:46:43, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object_attribute(\'TempSensorZoneA\'),\n    object_attribute(\'TempsensorZoneB\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group2\'),\n    assign(\'S1\',\'TempSensorZoneA\'),\n    assign(\'S2\',\'TempSensorZoneB\'),\n    assign(\'Group1\',\'access\'),\n    assign(\'Group2\',\'access\'),\n    assign(\'TempSensorZoneA\',\'access\'),\n    assign(\'TempSensorZoneB\',\'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensorZoneA\'),\n    associate(\'Group2\', [r], \'TempSensorZoneB\')])',ipolicy,success)).
+audit(2023-1-23_12:46:43, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_12:46:43, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_12:46:43, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:46:43, ngac, policy_query, access_denied(ipolicy,('User1',r,'S2'))).
+audit(2023-1-23_12:46:43, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_12:46:43, ngac, policy_query, access_denied(ipolicy,('User2',r,'S1'))).
+audit(2023-1-23_12:47:36, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object_attribute(\'TempSensorZoneA\'),\n    object_attribute(\'TempSensorZoneB\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group2\'),\n    assign(\'S1\',\'TempSensorZoneA\'),\n    assign(\'S2\',\'TempSensorZoneB\'),\n    assign(\'Group1\',\'access\'),\n    assign(\'Group2\',\'access\'),\n    assign(\'TempSensorZoneA\',\'access\'),\n    assign(\'TempSensorZoneB\',\'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensorZoneA\'),\n    associate(\'Group2\', [r], \'TempSensorZoneB\')])',ipolicy,success)).
+audit(2023-1-23_12:47:36, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_12:47:36, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_12:47:36, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:47:36, ngac, policy_query, access_denied(ipolicy,('User1',r,'S2'))).
+audit(2023-1-23_12:47:36, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_12:47:36, ngac, policy_query, access_denied(ipolicy,('User2',r,'S1'))).
+audit(2023-1-23_12:48:52, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object_attribute(\'TempSensorZoneA\'),\n    object_attribute(\'TempSensorZoneB\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group2\'),\n    assign(\'S1\',\'TempSensorZoneA\'),\n    assign(\'S2\',\'TempSensorZoneB\'),\n    assign(\'Group1\',\'access\'),\n    assign(\'Group2\',\'access\'),\n    assign(\'TempSensorZoneA\',\'access\'),\n    assign(\'TempSensorZoneB\',\'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensorZoneA\'),\n    associate(\'Group2\', [r], \'TempSensorZoneB\')])',ipolicy,success)).
+audit(2023-1-23_12:48:52, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_12:48:52, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_12:48:52, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:48:52, ngac, policy_query, access_denied(ipolicy,('User1',r,'S2'))).
+audit(2023-1-23_12:48:52, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_12:48:52, ngac, policy_query, access_denied(ipolicy,('User2',r,'S1'))).
+audit(2023-1-23_12:49:37, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object_attribute(\'TempSensorZoneA\'),\n    object_attribute(\'TempSensorZoneB\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group2\'),\n    assign(\'S1\',\'TempSensorZoneA\'),\n    assign(\'S2\',\'TempSensorZoneB\'),\n    assign(\'Group1\',\'access\'),\n    assign(\'Group2\',\'access\'),\n    assign(\'TempSensorZoneA\',\'access\'),\n    assign(\'TempSensorZoneB\',\'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensorZoneA\'),\n    associate(\'Group2\', [r], \'TempSensorZoneB\')])',ipolicy,success)).
+audit(2023-1-23_12:49:37, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_12:49:37, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_12:49:37, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:49:37, ngac, policy_query, access_denied(ipolicy,('User1',r,'S2'))).
+audit(2023-1-23_12:49:37, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_12:49:37, ngac, policy_query, access_denied(ipolicy,('User2',r,'S1'))).
+audit(2023-1-23_12:57:8, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object_attribute(\'TempSensorZoneA\'),\n    object_attribute(\'TempSensorZoneB\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group2\'),\n    assign(\'S1\',\'TempSensorZoneA\'),\n    assign(\'S2\',\'TempSensorZoneB\'),\n    assign(\'Group1\',\'access\'),\n    assign(\'Group2\',\'access\'),\n    assign(\'TempSensorZoneA\',\'access\'),\n    assign(\'TempSensorZoneB\',\'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensorZoneA\'),\n    associate(\'Group2\', [r,w], \'TempSensorZoneB\')])',ipolicy,success)).
+audit(2023-1-23_12:57:8, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_12:57:8, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_12:57:8, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_12:57:8, ngac, policy_query, access_denied(ipolicy,('User1',r,'S2'))).
+audit(2023-1-23_12:57:8, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_12:57:8, ngac, policy_query, access_denied(ipolicy,('User2',r,'S1'))).
+audit(2023-1-23_12:57:8, ngac, policy_query, access_denied(ipolicy,('User1',w,'S2'))).
+audit(2023-1-23_12:57:8, ngac, policy_query, access_granted(ipolicy,('User2',w,'S2'))).
+audit(2023-1-23_13:18:36, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'TempSensor\'),\n    object_attribute(\'Thermostat\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\',\'Group1\'),\n    assign(\'User2\',\'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assing(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_13:18:36, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_13:18:36, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_13:18:36, ngac, policy_query, access_denied(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_13:18:36, ngac, policy_query, access_denied(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_13:18:36, ngac, policy_query, access_denied(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_13:18:36, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_13:18:36, ngac, policy_query, access_denied(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_14:17:2, ngac, policy_admin, loadi('policy(ipolicy,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'TempSensor\'),\n    object_attribute(\'Thermostat\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\', \'Group1\'),\n    assign(\'User2\', \'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assign(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',ipolicy,success)).
+audit(2023-1-23_14:17:2, ngac, policy_admin, setpol(ipolicy,success)).
+audit(2023-1-23_14:17:2, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_14:17:2, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_14:17:2, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_14:17:2, ngac, policy_query, access_granted(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_14:17:2, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_14:17:2, ngac, policy_query, access_granted(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_14:19:13, ngac, policy_admin, loadi('policy(2023e1,access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'TempSensor\'),\n    object_attribute(\'Thermostat\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\', \'Group1\'),\n    assign(\'User2\', \'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assign(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])',failure)).
+audit(2023-1-23_14:19:13, ngac, policy_admin, setpol('2023e1',failure)).
+audit(2023-1-23_14:19:13, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_14:19:13, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_14:19:13, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_14:19:13, ngac, policy_query, access_granted(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_14:19:13, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_14:19:13, ngac, policy_query, access_granted(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_14:20:34, ngac, policy_admin, setpol('2023ExP1',failure)).
+audit(2023-1-23_14:20:34, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_14:20:34, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_14:20:34, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_14:20:34, ngac, policy_query, access_granted(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_14:20:34, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_14:20:34, ngac, policy_query, access_granted(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_14:20:45, ngac, policy_admin, setpol('2023ExP1',failure)).
+audit(2023-1-23_14:20:45, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_14:20:45, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_14:20:45, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_14:20:45, ngac, policy_query, access_granted(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_14:20:45, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_14:20:45, ngac, policy_query, access_granted(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_14:21:2, ngac, policy_admin, setpol('2023ExP1',failure)).
+audit(2023-1-23_14:21:2, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_14:21:2, ngac, policy_query, access_granted(ipolicy,('User1',r,'S1'))).
+audit(2023-1-23_14:21:2, ngac, policy_query, access_granted(ipolicy,('User2',r,'S2'))).
+audit(2023-1-23_14:21:2, ngac, policy_query, access_granted(ipolicy,('User3',r,'S3'))).
+audit(2023-1-23_14:21:2, ngac, policy_query, access_denied(ipolicy,('User1',r,'S3'))).
+audit(2023-1-23_14:21:2, ngac, policy_query, access_granted(ipolicy,('User3',w,'S3'))).
+audit(2023-1-23_15:14:18, ngac, policy_admin, loadi('policy(\'2023ExP1\',access,[\n    user(\'User1\'),\n    user(\'User2\'),\n    user(\'User3\'),\n    user_attribute(\'Group1\'),\n    user_attribute(\'Group2\'),\n    object(\'S1\'),\n    object(\'S2\'),\n    object(\'S3\'),\n    object_attribute(\'TempSensor\'),\n    object_attribute(\'Thermostat\'),\n    policy_class(\'access\'),\n    connector(\'PM\'),\n    assign(\'User1\', \'Group1\'),\n    assign(\'User2\', \'Group1\'),\n    assign(\'User3\', \'Group2\'),\n    assign(\'S1\', \'TempSensor\'),\n    assign(\'S2\', \'TempSensor\'),\n    assign(\'S3\', \'Thermostat\'),\n    assign(\'Group1\', \'access\'),\n    assign(\'Group2\', \'access\'),\n    assign(\'TempSensor\', \'access\'),\n    assign(\'Thermostat\', \'access\'),\n    assign(\'access\', \'PM\'),\n    associate(\'Group1\', [r], \'TempSensor\'),\n    associate(\'Group2\', [r,w], \'Thermostat\')])','2023ExP1',success)).
+audit(2023-1-23_15:14:18, ngac, policy_admin, setpol('2023ExP1',success)).
+audit(2023-1-23_15:14:18, ngac, policy_admin, getpol(success)).
+audit(2023-1-23_15:14:18, ngac, policy_query, access_granted('2023ExP1',('User1',r,'S1'))).
+audit(2023-1-23_15:14:18, ngac, policy_query, access_granted('2023ExP1',('User2',r,'S2'))).
+audit(2023-1-23_15:14:18, ngac, policy_query, access_granted('2023ExP1',('User3',r,'S3'))).
+audit(2023-1-23_15:14:18, ngac, policy_query, access_denied('2023ExP1',('User1',r,'S3'))).
+audit(2023-1-23_15:14:18, ngac, policy_query, access_granted('2023ExP1',('User3',w,'S3'))).
