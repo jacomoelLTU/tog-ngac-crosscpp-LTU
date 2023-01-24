@@ -27,15 +27,26 @@ curl -s -G "http://127.0.0.1:8001/paapi/loadi" --data-urlencode "policyspec=poli
     associate('Group1', [r], 'TempSensor'),
     associate('Group2', [r,w], 'Thermostat')])" --data-urlencode "token=admin_token"
 
+echo ''
 echo 'ipolicy should now be loaded onto the PolicyServer, run GET POLICY next'
 curl -s -G "http://127.0.0.1:8001/paapi/setpol" --data-urlencode "policy=2023ExP1" --data-urlencode "token=admin_token"
 
+echo ''
+echo 'Load condition immediate. Readback time set to 10 seconds (10000 milliseconds)'
+curl -s -G "http://127.0.0.1:8001/paapi/loadcondi" --data-urlencode "cond_elements=[
+	condition_predicate(time_conditional_read,[number, number]),
+	(time_conditional_read(X,Y) :-  X >= Y - 10000)
+	]" --data-urlencode "token=admin_token"
+
+echo ''
 echo 'get policy'
 curl  -G "http://127.0.0.1:8001/paapi/getpol" --data-urlencode "token=admin_token"
 
-#echo 'read the policy (explicitly named as ipolicy)'
-#curl -s -G "http://127.0.0.1:8001/paapi/readpol" --data-urlencode "policy=ipolicy" --data-urlencode "token=admin_token"
+echo ''
+echo 'read the policy (explicitly named as ipolicy)'
+curl -s -G "http://127.0.0.1:8001/paapi/readpol" --data-urlencode "policy=ipolicy" --data-urlencode "token=admin_token"
 
+echo ''
 echo 'run test to verify ipolicy worsk as it should, expect: G,G,G,D,G'
 curl  'http://127.0.0.1:8001/pqapi/access?user=User1&ar=r&object=S1'
 curl  'http://127.0.0.1:8001/pqapi/access?user=User2&ar=r&object=S2'
@@ -43,6 +54,7 @@ curl  'http://127.0.0.1:8001/pqapi/access?user=User3&ar=r&object=S3'
 curl  'http://127.0.0.1:8001/pqapi/access?user=User1&ar=r&object=S3'
 curl  'http://127.0.0.1:8001/pqapi/access?user=User3&ar=w&object=S3'
 
+echo ''
 echo 'end of ipolicy TEST, should still be loaded onto server'
 
 
