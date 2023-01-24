@@ -1,0 +1,21 @@
+audit(2023-1-13_10:19:6, ngac, ngac_start, success).
+audit(2023-1-13_10:19:41, ngac, policy_admin, load('sos-ngac-demo/demo.pl',sosngacdemo,success)).
+audit(2023-1-13_10:19:41, ngac, policy_admin, setpol(sosngacdemo,success)).
+audit(2023-1-13_10:19:41, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2023-1-13_10:19:41, ngac, policy_query, access_denied(sosngacdemo,('User',r,'SensorData'))).
+audit(2023-1-13_10:19:41, ngac, policy_query, access_granted(sosngacdemo,('Sensor',w,'SensorData'))).
+audit(2023-1-13_10:19:41, ngac, policy_query, access_granted(sosngacdemo,('User',r,'SensorData'))).
+audit(2023-1-13_10:19:41, ngac, policy_query, access_granted(sosngacdemo,('Admin',r,'SensorData'))).
+audit(2023-1-13_10:19:41, ngac, policy_query, access_granted(sosngacdemo,('Admin',w,'SensorData'))).
+audit(2023-1-13_10:19:41, ngac, policy_query, access_granted(sosngacdemo,('Admin',r,'SensorData'))).
+audit(2023-1-13_10:19:41, ngac, policy_query, access_granted(sosngacdemo,('Admin',w,'SensorData'))).
+audit(2023-1-13_10:28:40, ngac, policy_admin, load('sos-ngac-demo/demo.pl',sosngacdemo,success)).
+audit(2023-1-13_10:28:40, ngac, policy_admin, setpol(sosngacdemo,success)).
+audit(2023-1-13_10:28:40, ngac, policy_admin, loadcondi(dynamic,'cond elements added')).
+audit(2023-1-13_10:28:40, ngac, policy_query, access_denied(sosngacdemo,('User',r,'SensorData'))).
+audit(2023-1-13_10:28:40, ngac, policy_query, access_granted(sosngacdemo,('Sensor',w,'SensorData'))).
+audit(2023-1-13_10:28:40, ngac, policy_query, access_granted(sosngacdemo,('User',r,'SensorData'))).
+audit(2023-1-13_10:28:40, ngac, policy_query, access_granted(sosngacdemo,('Admin',r,'SensorData'))).
+audit(2023-1-13_10:28:40, ngac, policy_query, access_granted(sosngacdemo,('Admin',w,'SensorData'))).
+audit(2023-1-13_10:28:40, ngac, policy_query, access_granted(sosngacdemo,('Admin',r,'SensorData'))).
+audit(2023-1-13_10:28:40, ngac, policy_query, access_granted(sosngacdemo,('Admin',w,'SensorData'))).
